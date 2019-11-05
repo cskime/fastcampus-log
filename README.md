@@ -1,0 +1,208 @@
+# Markdown Syntax
+
+Markdown은 `#`, `*`같이 알파벳이 아닌 문자들과 함께 이루어진 text입니다. Text에 굵게, 기울임 등 여러 효과를 줄 수도 있고 table을 생성하거나 링크를 생성하는 등 기능을 제공합니다.
+
+
+
+## Headers
+
+Header는 html에서 `<h1>` ~ `<h6>` tag와 같습니다.
+
+```markdown
+# Heading1
+## Heading2
+### Heading3
+#### Heading4
+##### Heading5
+###### Heading6
+```
+
+
+
+Here is examples:
+
+# Heading1
+
+## Heading2
+### Heading3
+#### Heading4
+##### Heading5
+###### Heading6
+
+
+
+## Emphasis
+
+Emphasis(강조)는 text에 italic(기울임), bold(진하게) 등의 효과를 줍니다. `*` 또는 `_`를 사용하는데, 어떤 것을 사용해도 됩니다. 단, 두 기호를 함께 사용할 때는 시작과 끝이 같은 기호로 쌍이 맞아야 합니다.
+
+``` mark
+*This text will be italic*
+_This will also be italic_
+
+**This text will be bold**
+__This will also be bold__
+
+_You **can** combine them_
+_But, do **Not__ like this* 
+```
+
+
+
+Here is examples:
+
+*This text will be italic*
+
+_This will also be italic_
+
+**This text will be bold**
+
+__This will also be bold__
+
+_You **can** combine them_
+
+_But, do **Not__ like this*
+
+
+
+## Lists
+
+### Unordered
+
+Unordered list는  `*` 또는 `-`를 사용해서 순서가 없는 list를 만듭니다.
+
+``` markdo
+- Item1
+- Item2
+	- Item 2a
+	- Item 2b
+```
+
+- Item1
+- Item2
+	- Item 2a
+	- Item 2b
+
+### Ordered
+
+Ordered list는 숫자를 사용해서 순서가 있는 list를 만듭니다. List 번호는 아무렇게나 입력해도 수준(order)에 따라 순서대로 증가합니다.
+
+``` markdo
+1. Item1
+1. Item2
+	1. Item 2a
+	1. Item 2b
+```
+
+1. Item1
+1. Item2
+	1. Item 2a
+	1. Item 2b
+
+### Task List
+
+Task list는 check box로 list를 생성합니다.
+
+``` markdo
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
+```
+
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
+
+
+
+## Images
+
+Text 사이에 image를 삽입할 수 있습니다. URL 형식의 이미지 주소를 사용합니다.
+
+```mark
+![Github Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+```
+
+![Github Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+
+
+
+## Links
+
+Text에 특정 주소로 이동하는 link를 생성할 수 있습니다.
+
+``` makro
+You can go [Google](https://www.google.com) website.
+```
+
+You can go [Google](https://www.google.com) website.
+
+
+
+## Blockquotes
+
+Blockquotes(인용 부호)를 사용하여 인용해 온 문구를 표시할 수 있습니다.
+
+``` mark
+As Kanye West said:
+> we're living the future so
+> the present is our past.
+```
+
+As Kanye West said:
+> we're living the future so
+> the present is our past.
+
+
+
+## Inline code
+
+Text 중간에 code를 삽입할 수 있습니다. 일반 text와 구분시켜 보여줍니다.
+
+```mark
+I think you should use an `<addr>` element here instead.
+```
+
+I think you should use an `<addr>` element here instead.
+
+
+
+## Syntax highlighting
+
+Source code를 각 언어의 문법에 맞는 highlight를 적용하여 보여줍니다.
+
+```markdo
+​``` swift
+var sum = 0
+for value in 1...10 {
+	sum += value
+}
+​```
+```
+
+``` swift
+var sum = 0
+for value in 1...10 {
+	sum += value
+}
+```
+
+
+
+## Table
+
+글에 표를 삽입할 수 있습니다. `-`를 통해 row에서 제목과 내용을 구분하고 `|`을 통해 각 행(column)을 구분합니다. Header를 구분하는 `-` 기호의 개수는 무관합니다.
+
+```markdo
+| First Header | Second Header |
+| --- | - |
+| Row 1 Col 1  |  Row 1 Col 2 |
+| Row 2 Col 1  |  Row 2 Col 2 |
+```
+
+| First Header | Second Header |
+| ------------ | ------------- |
+| Row 1 Col 1  | Row 1 Col 2   |
+| Row 2 Col 1  | Row 2 Col 2   |
+
