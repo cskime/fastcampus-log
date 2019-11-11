@@ -12,4 +12,6 @@
 - Swift
   - Swift Basic
   - Function
+  - Control flow
+  - Tuple
 
