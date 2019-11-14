@@ -17,6 +17,19 @@ combineString(str1: "AB", str2: nil, str3: "EF")    // "ABEF"
 
 enum Arithmetic {
     case addition, subtraction, multiplication, division
+    
+    func calculate(num1: Int, num2: Int) -> Int? {
+        switch self {
+        case .addition:
+            return num1 + num2
+        case .subtraction:
+            return num1 - num2
+        case .multiplication:
+            return num1 * num2
+        case .division:
+            return num2 != 0 ? num1 / num2 : nil
+        }
+    }
 }
 
 func calculate(num1: Int, num2: Int, operate: Arithmetic) -> Int? {
@@ -32,6 +45,8 @@ func calculate(num1: Int, num2: Int, operate: Arithmetic) -> Int? {
     }
 }
 calculate(num1: 10, num2: 0, operate: .division)
+Arithmetic.multiplication.calculate(num1: 10, num2: 20)
+
 
 
 /* [ 도전 과제 ] */
