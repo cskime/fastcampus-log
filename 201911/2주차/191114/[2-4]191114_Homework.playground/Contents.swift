@@ -88,28 +88,10 @@ indirect enum ArithmeticExpression {
         switch self {
         case .number(let num):
             return num
-        case .addition(let addExp1, let addExp2):
-            switch (addExp1, addExp2) {
-            case (.number(let number1), .number(let number2)):
-                return number1 + number2
-            case (let exp, .number(let number2)):
-                return exp.evaluate() + number2
-            case (.number(let number1), let exp):
-                return number1 + exp.evaluate()
-            case (let exp1, let exp2):
-                return exp1.evaluate() + exp2.evaluate()
-            }
-        case .multiplication(let multipleExp1, let multipleExp2):
-            switch (multipleExp1, multipleExp2) {
-            case (.number(let number1), .number(let number2)):
-                return number1 * number2
-            case (let exp, .number(let number2)):
-                return exp.evaluate() * number2
-            case (.number(let number1), let exp):
-                return number1 * exp.evaluate()
-            case (let exp1, let exp2):
-                return exp1.evaluate() * exp2.evaluate()
-            }
+        case .addition(let exp1, let exp2):
+            return exp1.evaluate() + exp2.evaluate()
+        case .multiplication(let exp1, let exp2):
+            return exp1.evaluate() * exp2.evaluate()
         }
     }
 }
@@ -123,28 +105,10 @@ func evaluate(_ expression: ArithmeticExpression) -> Int {
     switch expression {
     case .number(let num):
         return num
-    case .addition(let addExp1, let addExp2):
-        switch (addExp1, addExp2) {
-        case (.number(let number1), .number(let number2)):
-            return number1 + number2
-        case (let exp, .number(let number2)):
-            return evaluate(exp) + number2
-        case (.number(let number1), let exp):
-            return number1 + evaluate(exp)
-        case (let exp1, let exp2):
-            return evaluate(exp1) + evaluate(exp2)
-        }
-    case .multiplication(let multipleExp1, let multipleExp2):
-        switch (multipleExp1, multipleExp2) {
-        case (.number(let number1), .number(let number2)):
-            return number1 * number2
-        case (let exp, .number(let number2)):
-            return evaluate(exp) * number2
-        case (.number(let number1), let exp):
-            return number1 * evaluate(exp)
-        case (let exp1, let exp2):
-            return evaluate(exp1) * evaluate(exp2)
-        }
+    case .addition(let exp1, let exp2):
+        return evaluate(exp1) + evaluate(exp2)
+    case .multiplication(let exp1, let exp2):
+        return evaluate(exp1) * evaluate(exp2)
     }
 }
 evaluate(five)
