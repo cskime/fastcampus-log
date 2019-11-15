@@ -22,4 +22,5 @@
   - [Collection: Set](https://github.com/cskime/ios-TIL/blob/master/201911/2%EC%A3%BC%EC%B0%A8/191113/%5B2-3%5D191113_CollectionType_Set.md)
   - [Optional](https://github.com/cskime/ios-TIL/blob/master/201911/2주차/191114/[2-4]191114_Optional.md)
   - [Enumeration](https://github.com/cskime/ios-TIL/blob/master/201911/2주차/191114/[2-4]191114_Enumerations.md)
+  - [Closure](https://github.com/cskime/ios-TIL/blob/master/201911/2주차/191115/[2-5]191115_Closure.md)
 
