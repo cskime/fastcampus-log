@@ -11,7 +11,6 @@
   - [Terminal](https://github.com/cskime/ios-school/blob/master/201911/1주차/191105/[1-2]191105_Terminal.md)
   - [Swift Basic: Operator, Type](https://github.com/cskime/ios-school/blob/master/201911/1주차/191108/[1-5]191108_Swift-Basic.md)
   - [Function](https://github.com/cskime/ios-school/blob/master/201911/1주차/191108/[1-5]191108-function.md)
-
 - Week 2
 
   - [Github](https://github.com/cskime/ios-school/blob/master/201911/2주차/191111/[2-1]191111_Github.md) & [Git Flow(co-working)](https://github.com/cskime/ios-school/blob/master/201911/2주차/191112/[2-2]191112_Github협업.md)
@@ -23,4 +22,6 @@
   - [Optional](https://github.com/cskime/ios-TIL/blob/master/201911/2주차/191114/[2-4]191114_Optional.md)
   - [Enumeration](https://github.com/cskime/ios-TIL/blob/master/201911/2주차/191114/[2-4]191114_Enumerations.md)
   - [Closure](https://github.com/cskime/ios-TIL/blob/master/201911/2주차/191115/[2-5]191115_Closure.md)
+- Weak 3
+  - [OOP and Class Basic](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191118/[3-1]191118_OOP와_Class.md)
 
