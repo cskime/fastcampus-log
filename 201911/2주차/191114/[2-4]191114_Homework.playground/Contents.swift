@@ -4,9 +4,9 @@
 func combineString(str1: String?, str2: String?, str3: String?) -> String {
     var result = ""
     
-    result = str1 ?? ""
-    result = str2 ?? ""
-    result = str3 ?? ""
+    result += str1 ?? ""
+    result += str2 ?? ""
+    result += str3 ?? ""
     
     return result
 }
