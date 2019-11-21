@@ -26,4 +26,6 @@
   - [OOP and Class Basic](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191118/[3-1]191118_OOP와_Class.md)
   - [OOP의 4대 특성](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191119/[3-2]191119_OOP_4대특성.md)
   - [Access Control](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191119/[3-2]191119_Class_Access_Control.md)
+  - [App Life Cycle](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191121/[3-4]191121_App_Lifecycle.md)
+  - [Xcode: SceneDelegate and AppDelegate](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191121/[3-4]191121_Xcode_Project.md)
 
