@@ -28,4 +28,5 @@
   - [Access Control](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191119/[3-2]191119_Class_Access_Control.md)
   - [App Life Cycle](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191121/[3-4]191121_App_Lifecycle.md)
   - [Xcode: SceneDelegate and AppDelegate](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191121/[3-4]191121_Xcode_Project.md)
-
+  - [UIGuide: Point vs. Pixel, Frame vs. Bounds](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191122/[3-5]191122_UIGuide.md)
+  - [UIViewContentMode](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191122/[3-5]191122_UIViewContentMode.md)
