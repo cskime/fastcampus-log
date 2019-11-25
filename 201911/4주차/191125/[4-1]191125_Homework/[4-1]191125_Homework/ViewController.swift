@@ -17,13 +17,6 @@ class ViewController: UIViewController {
         setupUI()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        // Do any additional setup after appearing the view.
-        
-        label.text = "\(count)"
-    }
-    
     var count = 0
     let label = UILabel()
     func setupUI() {
@@ -33,6 +26,7 @@ class ViewController: UIViewController {
         label.center = CGPoint(x: view.center.x, y: view.center.y - 50)
         label.textAlignment = .center
         label.font = .systemFont(ofSize: 50)
+        label.text = "0"
         view.addSubview(label)
         
         let button = UIButton(type: .system)
@@ -46,6 +40,7 @@ class ViewController: UIViewController {
     
     @objc func presentTouched(_ sender: UIButton) {
         let bvc = BViewController()
+        bvc.label.text = "\(count + 1)"
         count += 1
         self.present(bvc, animated: true)   // self : ViewController class
     }

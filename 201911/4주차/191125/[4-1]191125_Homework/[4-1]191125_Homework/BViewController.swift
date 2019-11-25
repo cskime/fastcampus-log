@@ -17,16 +17,6 @@ class BViewController: UIViewController {
         setupUI()
     }
     
-    var count = 0
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        // Do any additional setup after appearing the view.
-        guard let presentingViewController = presentingViewController as? ViewController else {
-            return
-        }
-        label.text = "\(presentingViewController.count)"
-    }
-    
     let label = UILabel()
     func setupUI() {
         view.backgroundColor = .systemBackground
@@ -47,11 +37,9 @@ class BViewController: UIViewController {
     }
     
     @objc func dismissTouched(_ sender: UIButton) {
-        guard let aViewController = presentingViewController as? ViewController else {
-            return
-        }
-        count += 1
-        aViewController.count += count
+        guard let aViewController = presentingViewController as? ViewController else { return }
+        
+        aViewController.count += 1
         aViewController.label.text = "\(aViewController.count)"
         dismiss(animated: true)
     }
