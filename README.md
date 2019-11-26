@@ -32,4 +32,6 @@
   - [UIViewContentMode](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191122/[3-5]191122_UIViewContentMode.md)
   - [UIViewController](https://github.com/cskime/ios-TIL/blob/master/201911/4주차/191125/[4-1]191125_UIViewController.md)
   - [Modal Presentation](https://github.com/cskime/ios-TIL/blob/master/201911/4주차/191125/[4-1]191125_Modal_Presentation.md)
+  - [UITextField](https://github.com/cskime/ios-TIL/blob/master/201911/4주차/191126/[4-2]191126_UITextField.md)
+  - [UIAlertController](https://github.com/cskime/ios-TIL/blob/master/201911/4주차/191126/[4-2]191126_UIAlertController.md)
 
