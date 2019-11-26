@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_4_2_191126_UITextFieldExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login ID" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Gd-7G-KDU">
+                                <rect key="frame" x="20" y="143" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="lE4-HG-Ain"/>
+                                    <action selector="textFieldEditingDidBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="w6N-DR-Gt2"/>
+                                    <action selector="textFieldEditingDidEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="nvd-zQ-u8A"/>
+                                    <action selector="textFieldPrimaryActionTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="zQW-M0-cpV"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TKn-Ug-Eqk">
+                                <rect key="frame" x="20" y="288" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="4Kf-e7-R1l"/>
+                                    <action selector="textFieldEditingDidBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="0xt-h9-v2T"/>
+                                    <action selector="textFieldEditingDidEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="i75-Ro-ziL"/>
+                                    <action selector="textFieldPrimaryActionTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="mHe-XU-zw2"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4f4-Ku-tVa">
+                                <rect key="frame" x="20" y="219" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="RmH-bI-DHy"/>
+                                    <action selector="textFieldEditingDidBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="3Ad-ag-q1e"/>
+                                    <action selector="textFieldEditingDidEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="aUb-hc-cFu"/>
+                                    <action selector="textFieldPrimaryActionTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="8Hu-Jq-Qq9"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="comfirmTextField" destination="TKn-Ug-Eqk" id="S8w-eo-JMD"/>
+                        <outlet property="loginTextField" destination="0Gd-7G-KDU" id="NRU-i9-Qsr"/>
+                        <outlet property="passwordTextField" destination="4f4-Ku-tVa" id="BH6-Nl-y6g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
