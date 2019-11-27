@@ -17,9 +17,12 @@ class SecondViewController: UIViewController {
         
         if #available(iOS 13.0, *) {
             view.backgroundColor = .systemBackground
+//            isModalInPresentation = true
         } else {
             view.backgroundColor = .white
         }
+        presentationController?.delegate = self
+        
         setupUI()
     }
     
@@ -86,5 +89,28 @@ class SecondViewController: UIViewController {
         super.viewDidDisappear(animated)
         print("Next View Did Disappear")
         
+    }
+}
+
+extension SecondViewController: UIAdaptivePresentationControllerDelegate {
+    // 호출되는 경우
+    // 1. isModalInPresentation = true일 때
+    // 2. shouldDismiss가 false를 반환할 때
+    
+    func presentationControllerDidAttemptToDismiss(_ presentationController: UIPresentationController) {
+        print("Dismiss Gesture: didAttemptToDismiss")
+    }
+
+    func presentationControllerShouldDismiss(_ presentationController: UIPresentationController) -> Bool {
+        print("Dismiss Gesture: shouldDismiss")
+        return true
+    }
+
+    func presentationControllerWillDismiss(_ presentationController: UIPresentationController) {
+        print("Dismiss Gesture: willDismiss")
+    }
+
+    func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        print("Dismiss Gesture: didDismiss")
     }
 }

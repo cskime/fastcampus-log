@@ -20,6 +20,7 @@ class FirstViewController: UIViewController {
         } else {
             view.backgroundColor = .white
         }
+        presentationController?.delegate = self
         
         setupUI()
     }
