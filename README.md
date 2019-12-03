@@ -41,3 +41,7 @@
 - [UITextField](https://github.com/cskime/ios-TIL/blob/master/201911/4주차/191126/[4-2]191126_UITextField.md)
 - [UIAlertController](https://github.com/cskime/ios-TIL/blob/master/201911/4주차/191126/[4-2]191126_UIAlertController.md)
 
+### Weak 5
+
+- [Storyboard Segueway](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191203/[5-2]191203_Segue.md)
+
