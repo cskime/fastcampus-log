@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_5_2_191203_Homework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="lV7-MX-7bs">
+                                <rect key="frame" x="76.666666666666686" y="385.66666666666669" width="222" height="41"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnx-sx-9mg">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Dog"/>
+                                        <connections>
+                                            <segue destination="ldc-oR-jh4" kind="presentation" identifier="Dog" id="p7O-lC-yzY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grG-O5-hha">
+                                        <rect key="frame" x="93.999999999999986" y="0.0" width="37.000000000000014" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Cat"/>
+                                        <connections>
+                                            <segue destination="ldc-oR-jh4" kind="presentation" identifier="Cat" id="Pai-N2-b9z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lP-yn-YeB">
+                                        <rect key="frame" x="181" y="0.0" width="41" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Bird"/>
+                                        <connections>
+                                            <segue destination="ldc-oR-jh4" kind="presentation" identifier="Bird" id="pz1-bl-zhp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(0, 0, 0)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ex7-0h-bse">
+                                <rect key="frame" x="137.33333333333334" y="299.66666666666669" width="100.66666666666666" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ex7-0h-bse" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AW3-vd-sDd"/>
+                            <constraint firstItem="lV7-MX-7bs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I7q-TJ-PbY"/>
+                            <constraint firstItem="lV7-MX-7bs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YSG-p6-y1N"/>
+                            <constraint firstItem="lV7-MX-7bs" firstAttribute="top" secondItem="Ex7-0h-bse" secondAttribute="bottom" constant="50" id="cv1-A5-zhW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="birdButton" destination="8lP-yn-YeB" id="mMG-u1-lgV"/>
+                        <outlet property="catButton" destination="grG-O5-hha" id="aoN-EF-9Fy"/>
+                        <outlet property="countLabel" destination="Ex7-0h-bse" id="fMo-aN-cdt"/>
+                        <outlet property="dogButton" destination="fnx-sx-9mg" id="cFl-WY-dBN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="yN3-xN-GE2">
+            <objects>
+                <viewController id="ldc-oR-jh4" customClass="SecondViewController" customModule="_5_2_191203_Homework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gUo-5M-nZO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="WnA-vC-933">
+                                <rect key="frame" x="146.66666666666666" y="390" width="82" height="111"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxo-HI-pwl">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Dismiss"/>
+                                        <connections>
+                                            <segue destination="aXQ-Tr-dBB" kind="unwind" unwindAction="unwindToFirstVC:" id="G6I-VP-yC7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8X-t4-Kce">
+                                        <rect key="frame" x="26" y="70" width="30" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="+1"/>
+                                        <connections>
+                                            <action selector="countTouched:" destination="ldc-oR-jh4" eventType="touchUpInside" id="Ee9-aU-uFf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nim-eq-iJE">
+                                <rect key="frame" x="67.666666666666686" y="100" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Bes-kR-FYk"/>
+                                    <constraint firstAttribute="height" constant="240" id="pDG-GG-snv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WnA-vC-933" firstAttribute="centerX" secondItem="gUo-5M-nZO" secondAttribute="centerX" id="MiK-tw-GH6"/>
+                            <constraint firstItem="Nim-eq-iJE" firstAttribute="centerX" secondItem="gUo-5M-nZO" secondAttribute="centerX" id="NUh-45-G10"/>
+                            <constraint firstItem="Nim-eq-iJE" firstAttribute="top" secondItem="tpF-g6-kta" secondAttribute="top" constant="100" id="hzg-14-RNA"/>
+                            <constraint firstItem="WnA-vC-933" firstAttribute="top" secondItem="Nim-eq-iJE" secondAttribute="bottom" constant="50" id="wnx-pK-0DW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tpF-g6-kta"/>
+                    </view>
+                    <connections>
+                        <outlet property="dismissButton" destination="pxo-HI-pwl" id="A0T-1Z-8q4"/>
+                        <outlet property="imageView" destination="Nim-eq-iJE" id="BBQ-4u-88X"/>
+                        <outlet property="plusButton" destination="w8X-t4-Kce" id="t7i-qs-OY5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hSv-p1-95V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="aXQ-Tr-dBB" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="962" y="138"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pz1-bl-zhp"/>
+    </inferredMetricsTieBreakers>
+</document>
