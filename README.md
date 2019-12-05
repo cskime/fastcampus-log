@@ -44,4 +44,6 @@
 ### Weak 5
 
 - [Storyboard Segueway](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191203/[5-2]191203_Segue.md)
+- [Type Casting](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191205/[5-4]191205_Type Casting.md)
+- [Initializer](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191205/[5-4]191205_Initializer.md)
 
