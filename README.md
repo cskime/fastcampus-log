@@ -46,4 +46,6 @@
 - [Storyboard Segueway](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191203/[5-2]191203_Segue.md)
 - [Type Casting](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191205/[5-4]191205_TypeCasting.md)
 - [Initializer](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191205/[5-4]191205_Initializer.md)
+- [Singleton](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191206/[5-5]191206_Singleton.md)
+- [UserDefaults](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191206/[5-5]191206_UserDefaults.md)
 
