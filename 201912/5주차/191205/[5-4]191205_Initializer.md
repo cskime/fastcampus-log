@@ -198,11 +198,13 @@
   }
   ```
 
+### 자식 클래스를 먼저 초기화하고 부모 클래스를 나중에 초기화해야 하는 이유 
+
 - Sub class의 DI에서 먼저 프로퍼티 초기화를 끝낸 후, super class의 DI를 호출해야 함. 즉, **sub class의 초기화가 먼저 끝난 뒤 super class를 초기화**해야함
 
-  - Super class의 DI에서 어떤 함수를 호출하고 있고, sub class에서 그 함수를 override하고 있는 경우, `super.init`을 호출했을 때는 sub class에서 override한 함수가 실행됨. 
-    - 객체 만들 때 객체의 타입을 부모 타입으로 정해도 실제 들어가는 값이 자식 클래스라면 동일하게 동작하기 때문
+  - Super class의 DI에서 어떤 함수를 호출하고 있고, sub class에서 그 함수를 override하고 있는 경우, `super.init`을 통해 함수가 호출될 때는 sub class에서 override한 함수가 실행됨. **`super.init`을 호출한 주체가 sub class이기 때문.**
   - 이 때, sub class에서 아직 초기화되지 않은 프로퍼티가 override한 함수에서 사용된다면, 초기화되지 않은 변수를 사용하게 될 우려가 있음
+  - 객체의 정적 타입을 super class 타입으로 정해도, **실제 들어가는 값**이 sub class 타입 인스턴스라면 sub class의 `init`이 먼저 호출되고 sub class가 `super class`의 `init`을 호출하게 되므로 같은 결과가 나옴
   - 이런 오류를 막기 위해 **Sub Class의 `init` 먼저 호출하고 나중에 Super Class의 `init`을 호출해야함**
 
   ```swift
@@ -251,9 +253,9 @@
   // Triangle에서 override한 함수가 호출
   ```
 
--  Super class에서 생성자가 기본 생성자(`init()`)밖에 없으면 직접 호출하지 않아도 시스템이 자동 호출. 기본 생성자가 아닌 매개변수를 갖는 DI라면 명시적으로 호출해야함
+- Super class에 생성자가 기본 생성자(`init()`)밖에 없으면 sub class에서 `super.init()`을 직접 호출하지 않아도 시스템이 자동 호출함. **기본 생성자가 외에 다른 생성자**를 갖는다면 명시적으로 호출해야함
 
-- **즉, Sub Class에서는 항상 자기 자신의 저장 프로퍼티를 모두 초기화하는 작업이 우선되어야함**
+- 즉, **Sub Class에서는 항상 자기 자신의 저장 프로퍼티를 모두 초기화하는 작업이 우선되어야 한다**
 
 ## Initializer Specification
 
@@ -286,7 +288,7 @@
 
 ### Extension Initializer
 
-- `extension`에서 initializer를 추가할 때는 **DI는 추가할 수 없고 CI만 추가할 수 있음**. 원래 기능의 확장 개념이므로 DI를 추가하는건 안됨. 원래 갖고 있는 DI를 이용하는 개념인 CI만 추가할 수 있는 것
+- `extension`에서 initializer를 추가할 때는 **DI는 추가할 수 없고 CI만 추가할 수 있음**. 원래 기능의 확장 개념이므로 원래 갖고 있던 DI를 이용해서 초기화하는 CI만 추가할 수 있는 것
 
   ```swift
   class Rectangle {
