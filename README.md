@@ -49,3 +49,7 @@
 - [Singleton](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191206/[5-5]191206_Singleton.md)
 - [UserDefaults](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191206/[5-5]191206_UserDefaults.md)
 
+### Weak 6
+
+- [Struct](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191209/[6-2]191209_Struct.md)
+- [Memory Management(ARC)](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191209/[6-1]191209_Memory_Management.md)
