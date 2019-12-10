@@ -53,3 +53,5 @@
 
 - [Struct](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191209/[6-2]191209_Struct.md)
 - [Memory Management(ARC)](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191209/[6-1]191209_Memory_Management.md)
+- [Delegate Pattern](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191210/[6-2]191210_Delegate.md)
+
