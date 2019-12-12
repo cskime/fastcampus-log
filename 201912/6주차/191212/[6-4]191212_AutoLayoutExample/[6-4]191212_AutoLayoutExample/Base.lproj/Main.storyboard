@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tXC-8k-AWN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2P0-6y-qsn">
+                                <rect key="frame" x="30" y="303" width="354" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfb-AG-QLq">
+                                        <rect key="frame" x="50" y="50" width="254" height="200"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="hl6-m6-nkm"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wfb-AG-QLq" firstAttribute="leading" secondItem="2P0-6y-qsn" secondAttribute="leading" constant="50" id="2EJ-6A-JYh"/>
+                                    <constraint firstItem="wfb-AG-QLq" firstAttribute="centerY" secondItem="2P0-6y-qsn" secondAttribute="centerY" id="2sG-Gx-UpA"/>
+                                    <constraint firstItem="wfb-AG-QLq" firstAttribute="centerX" secondItem="2P0-6y-qsn" secondAttribute="centerX" id="H3I-5N-ROg"/>
+                                    <constraint firstAttribute="height" constant="300" id="M9g-eh-eEM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2P0-6y-qsn" secondAttribute="trailing" constant="30" id="Iut-GR-YFD"/>
+                            <constraint firstItem="2P0-6y-qsn" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="hWO-1t-Idu"/>
+                            <constraint firstItem="2P0-6y-qsn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="hd0-Rd-s24"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vGQ-Fz-Scu">
+            <objects>
+                <viewController id="GCT-pQ-q0c" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IaV-Nw-3jF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HfA-19-Vva">
+                                <rect key="frame" x="20" y="64" width="182" height="778"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KfW-FE-Kf2">
+                                <rect key="frame" x="212" y="64" width="182" height="778"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Uew-rX-tc2" firstAttribute="trailing" secondItem="KfW-FE-Kf2" secondAttribute="trailing" constant="20" id="1If-MV-LMQ"/>
+                            <constraint firstItem="HfA-19-Vva" firstAttribute="leading" secondItem="Uew-rX-tc2" secondAttribute="leading" constant="20" id="3Xq-5T-yKX"/>
+                            <constraint firstItem="Uew-rX-tc2" firstAttribute="bottom" secondItem="KfW-FE-Kf2" secondAttribute="bottom" constant="20" id="5YZ-gM-KFZ"/>
+                            <constraint firstItem="KfW-FE-Kf2" firstAttribute="width" secondItem="HfA-19-Vva" secondAttribute="width" id="7Df-aK-lyH"/>
+                            <constraint firstItem="Uew-rX-tc2" firstAttribute="bottom" secondItem="HfA-19-Vva" secondAttribute="bottom" constant="20" id="7i4-VU-b80"/>
+                            <constraint firstItem="KfW-FE-Kf2" firstAttribute="leading" secondItem="HfA-19-Vva" secondAttribute="trailing" constant="10" id="DU3-Vo-73J"/>
+                            <constraint firstItem="HfA-19-Vva" firstAttribute="top" secondItem="Uew-rX-tc2" secondAttribute="top" constant="20" id="Fay-mv-fu6"/>
+                            <constraint firstItem="KfW-FE-Kf2" firstAttribute="top" secondItem="Uew-rX-tc2" secondAttribute="top" constant="20" id="Vch-jV-gzj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uew-rX-tc2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QDe-Tx-JCU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959.4202898550725" y="137.94642857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="afC-VR-mwW">
+            <objects>
+                <viewController id="tXC-8k-AWN" customClass="ViewController" customModule="_6_4_191212_AutoLayoutExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WSy-kn-6FX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="IJg-7i-fUm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFP-e5-Otr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1812" y="138"/>
+        </scene>
+    </scenes>
+</document>
