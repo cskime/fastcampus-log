@@ -34,6 +34,7 @@ class ViewController: UIViewController {
         
         setupConstraints()
         inputForm.setTextFieldDelegate(self)
+        signView.setButtonDelegate(self)
     }
     
     private func setupConstraints() {
@@ -54,7 +55,6 @@ class ViewController: UIViewController {
         
         let signPadding: CGFloat = 24
         let signBottomPadding: CGFloat = 48
-        signView.setButtonDelegate(self)
         view.addSubview(signView)
         signView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
