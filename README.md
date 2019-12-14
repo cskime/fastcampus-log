@@ -55,4 +55,5 @@
 - [Memory Management(ARC)](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191209/[6-1]191209_Memory_Management.md)
 - [Delegate Pattern](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191210/[6-2]191210_Delegate.md)
 - [AutoLayout Basic](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191212/[6-4]191212_AutoLayout.md)
+- [Practice Project: Login Page](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191213/[6-5]191213_LoginPageProject.md)
 
