@@ -15,27 +15,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        //        if #available(iOS 13.0, *) {
-        //            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-        //                let window = UIWindow(windowScene: windowScene)
-        //                window.rootViewController = ViewController()
-        //
-        //                (windowScene.delegate as? SceneDelegate)?.window = window
-        //                window.makeKeyAndVisible()
-        //            }
-        //        } else {
-        //            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        //            let window = UIWindow(frame: UIScreen.main.bounds)
-        //            window.rootViewController = ViewController()
-        //            window.makeKeyAndVisible()
-        //
-        //        }
-        
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = ViewController()
+        if UserDefaults.standard.bool(forKey: UserInfoKey.isLogined) {
+            window?.rootViewController = MainViewController()
+        } else {
+            window?.rootViewController = ViewController()
+        }
         window?.makeKeyAndVisible()
         
         return true
     }
 }
 
+/*
+ iOS 13 이상에서 SceneDelegate와 AppDelegate를 같이 사용할 경우...
+ */
+//        if #available(iOS 13.0, *) {
+//            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+//                let window = UIWindow(windowScene: windowScene)
+//                window.rootViewController = ViewController()
+//
+//                (windowScene.delegate as? SceneDelegate)?.window = window
+//                window.makeKeyAndVisible()
+//            }
+//        } else {
+//            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//            let window = UIWindow(frame: UIScreen.main.bounds)
+//            window.rootViewController = ViewController()
+//            window.makeKeyAndVisible()
+//
+//        }

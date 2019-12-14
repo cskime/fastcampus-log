@@ -42,6 +42,9 @@ class FormTextField: UIView {
         
         textField.placeholder = placeholder
         textField.font = .systemFont(ofSize: 20)
+        textField.autocapitalizationType = .none
+        textField.autocorrectionType = .no
+        textField.clearButtonMode = .whileEditing
         
         // Underline
         

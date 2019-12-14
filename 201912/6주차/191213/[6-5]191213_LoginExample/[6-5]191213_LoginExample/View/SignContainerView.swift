@@ -8,14 +8,7 @@
 
 import UIKit
 
-protocol SignButtonDelegate: class {
-    func signUpTouched()
-}
-
-
 class SignContainerView: UIView {
-
-    weak var delegate: SignButtonDelegate?
     
     convenience init() {
         self.init(frame: CGRect.zero)
@@ -23,34 +16,38 @@ class SignContainerView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupUI()
+        setupConstraints()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setupUI() {
-        let button = UIButton(type: .system)
-        button.setTitle("Sign In", for: .normal)
-        button.titleLabel?.font = .systemFont(ofSize: 24)
-        button.addTarget(self, action: #selector(signTouched(_:)), for: .touchUpInside)
-        button.backgroundColor = .gray
-        button.tintColor = .white
-        button.layer.cornerRadius = 10
-        self.addSubview(button)
-        
-        button.translatesAutoresizingMaskIntoConstraints = false
+    let signInButton = SignButton(type: .SignIn)
+    let signUpButton = SignButton(type: .SignUp)
+    private func setupConstraints() {
+        self.addSubview(signInButton)
+        signInButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            button.topAnchor.constraint(equalTo: self.topAnchor),
-            button.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            button.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            button.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            signInButton.topAnchor.constraint(equalTo: self.topAnchor),
+            signInButton.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            signInButton.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            signInButton.heightAnchor.constraint(equalToConstant: 48)
+        ])
+        
+        self.addSubview(signUpButton)
+        signUpButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            signUpButton.topAnchor.constraint(equalTo: signInButton.bottomAnchor, constant: 12),
+            signUpButton.leadingAnchor.constraint(equalTo: signInButton.leadingAnchor),
+            signUpButton.trailingAnchor.constraint(equalTo: signInButton.trailingAnchor),
+            signUpButton.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            signUpButton.heightAnchor.constraint(equalToConstant: 48),
         ])
     }
     
-    @objc func signTouched(_ sender: UIButton) {
-        delegate?.signUpTouched()
+    func setButtonDelegate(_ delegate: SignButtonDelegate) {
+        signInButton.delegate = delegate
+        signUpButton.delegate = delegate
     }
-
 }

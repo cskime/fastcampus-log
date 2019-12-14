@@ -10,29 +10,66 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    private var dismissButton = UIButton(type: .system)
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         // Do any additional setup after loading the view.
         setupUI()
     }
     
-
+    private var signOutButton = SignButton(type: .SignOut)
+    private var userLabel = UILabel()
     private func setupUI() {
         view.backgroundColor = .white
         
-        dismissButton.frame.size = CGSize(width: 80, height: 40)
-        dismissButton.addTarget(self, action: #selector(dismissTouched(_:)), for: .touchUpInside)
-        dismissButton.center = view.center
-        dismissButton.setTitle("Dismiss", for: .normal)
-        view.addSubview(dismissButton)
+        signOutButton.delegate = self
+        
+        userLabel.text = UserDefaults.standard.string(forKey: UserInfoKey.loginedEmail)
+        userLabel.font = .systemFont(ofSize: 24)
+        userLabel.textAlignment = .center
+        
+        setupConstraints()
+        
     }
     
-    @objc func dismissTouched(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+    private func setupConstraints() {
+        let sidePadding: CGFloat = 24
+        let bottomPadding: CGFloat = 96
+        view.addSubview(signOutButton)
+        signOutButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            signOutButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -bottomPadding),
+            signOutButton.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: sidePadding),
+            signOutButton.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -sidePadding),
+            signOutButton.heightAnchor.constraint(equalToConstant: 48),
+        ])
+        
+        view.addSubview(userLabel)
+        userLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            userLabel.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor),
+            userLabel.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor),
+            userLabel.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+        ])
     }
 
+}
+
+extension MainViewController: SignButtonDelegate {
+    func signOutTouched() {
+        if UserDefaults.standard.bool(forKey: UserInfoKey.isLogined) {
+            UserDefaults.standard.set(false, forKey: UserInfoKey.isLogined)
+            UserDefaults.standard.removeObject(forKey: UserInfoKey.loginedEmail)
+            UserDefaults.standard.removeObject(forKey: UserInfoKey.loginedPassword)
+        }
+        
+        if let _ = presentingViewController as? ViewController {
+            dismiss(animated: true, completion: nil)
+        } else {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.window?.rootViewController = ViewController()
+            appDelegate.window?.makeKeyAndVisible()
+        }
+        
+    }
 }

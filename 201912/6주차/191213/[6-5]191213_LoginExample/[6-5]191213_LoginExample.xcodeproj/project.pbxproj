@@ -19,7 +19,9 @@
 		AC180E9023A3769200C90C39 /* SignContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC180E8F23A3769200C90C39 /* SignContainerView.swift */; };
 		AC180E9223A378F900C90C39 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC180E9123A378F900C90C39 /* MainViewController.swift */; };
 		AC180E9723A3B21200C90C39 /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC180E9623A3B21200C90C39 /* DotView.swift */; };
-		AC180E9923A3BBFC00C90C39 /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC180E9823A3BBFC00C90C39 /* test.storyboard */; };
+		AC180E9B23A4A4C800C90C39 /* SignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC180E9A23A4A4C800C90C39 /* SignButton.swift */; };
+		AC180E9D23A4AEBF00C90C39 /* UserInfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC180E9C23A4AEBF00C90C39 /* UserInfoKey.swift */; };
+		AC180E9F23A4BE8D00C90C39 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC180E9E23A4BE8D00C90C39 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +39,9 @@
 		AC180E8F23A3769200C90C39 /* SignContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignContainerView.swift; sourceTree = "<group>"; };
 		AC180E9123A378F900C90C39 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../View/MainViewController.swift; sourceTree = "<group>"; };
 		AC180E9623A3B21200C90C39 /* DotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotView.swift; sourceTree = "<group>"; };
-		AC180E9823A3BBFC00C90C39 /* test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = test.storyboard; sourceTree = "<group>"; };
+		AC180E9A23A4A4C800C90C39 /* SignButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignButton.swift; sourceTree = "<group>"; };
+		AC180E9C23A4AEBF00C90C39 /* UserInfoKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoKey.swift; sourceTree = "<group>"; };
+		AC180E9E23A4BE8D00C90C39 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "[6-5]191213_LoginExample/Controller/SignUpViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +93,8 @@
 				AC180E8523A35FE300C90C39 /* Dot.swift */,
 				AC180E8923A3609800C90C39 /* FormContainerView.swift */,
 				AC180E8D23A362BD00C90C39 /* FormTextField.swift */,
-				AC180E9823A3BBFC00C90C39 /* test.storyboard */,
 				AC180E8F23A3769200C90C39 /* SignContainerView.swift */,
+				AC180E9A23A4A4C800C90C39 /* SignButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				AC180E8723A3606900C90C39 /* ImageKey.swift */,
+				AC180E9C23A4AEBF00C90C39 /* UserInfoKey.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			children = (
 				AC180E6D23A34A2100C90C39 /* ViewController.swift */,
 				AC180E9123A378F900C90C39 /* MainViewController.swift */,
+				AC180E9E23A4BE8D00C90C39 /* SignUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,7 +177,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC180E7623A34A2200C90C39 /* LaunchScreen.storyboard in Resources */,
-				AC180E9923A3BBFC00C90C39 /* test.storyboard in Resources */,
 				AC180E7323A34A2200C90C39 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,11 +192,14 @@
 				AC180E9023A3769200C90C39 /* SignContainerView.swift in Sources */,
 				AC180E8823A3606900C90C39 /* ImageKey.swift in Sources */,
 				AC180E7F23A350FE00C90C39 /* LogoView.swift in Sources */,
+				AC180E9D23A4AEBF00C90C39 /* UserInfoKey.swift in Sources */,
 				AC180E9723A3B21200C90C39 /* DotView.swift in Sources */,
+				AC180E9B23A4A4C800C90C39 /* SignButton.swift in Sources */,
 				AC180E8E23A362BD00C90C39 /* FormTextField.swift in Sources */,
 				AC180E6A23A34A2100C90C39 /* AppDelegate.swift in Sources */,
 				AC180E9223A378F900C90C39 /* MainViewController.swift in Sources */,
 				AC180E8A23A3609800C90C39 /* FormContainerView.swift in Sources */,
+				AC180E9F23A4BE8D00C90C39 /* SignUpViewController.swift in Sources */,
 				AC180E8623A35FE300C90C39 /* Dot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
