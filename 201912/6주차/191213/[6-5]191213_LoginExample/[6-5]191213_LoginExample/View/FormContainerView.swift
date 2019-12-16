@@ -64,22 +64,22 @@ class FormContainerView: UIView {
     // 로그인 가능한지 확인
     func canSignIn() -> Bool {
         guard let emailInput = emailTextField.textField.text else {
-            disaccordEffect(to: emailTextField)
+            disaccordEffect(to: emailTextField.textField)
             return false
         }
         
         guard let passwordInput = passwordTextField.textField.text else {
-            disaccordEffect(to: passwordTextField)
+            disaccordEffect(to: passwordTextField.textField)
             return false
         }
         
         guard let password = UserDefaults.standard.string(forKey: emailInput) else {
-            disaccordEffect(to: emailTextField)
+            disaccordEffect(to: emailTextField.textField)
             return false
         }
         
         guard passwordInput == password else {
-            disaccordEffect(to: passwordTextField)
+            disaccordEffect(to: passwordTextField.textField)
             return false
         }
         
@@ -95,7 +95,7 @@ class FormContainerView: UIView {
         return (emailInput, passwordInput)
     }
     
-    private func disaccordEffect(to textField: FormTextField?) {
+    private func disaccordEffect(to textField: UITextField?) {
         guard let textField = textField else { return }
         textField.backgroundColor = UIColor.red.withAlphaComponent(0.5)
         UIView.animate(withDuration: 0.7) {
