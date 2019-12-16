@@ -57,3 +57,7 @@
 - [AutoLayout Basic](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191212/[6-4]191212_AutoLayout.md)
 - [Practice Project: Login Page](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191213/[6-5]191213_LoginPageProject.md)
 
+### Weak 7
+
+- [AutoLayout: Intrinsic Content Size, CHCR, Priority](https://github.com/cskime/ios-TIL/blob/master/201912/7주차/191216/[7-1]191216_AutoLayout2.md)
+- [UIStackView](https://github.com/cskime/ios-TIL/blob/master/201912/7주차/191216/[7-1]191216_UIStackView.md)
