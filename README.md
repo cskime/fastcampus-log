@@ -61,3 +61,4 @@
 
 - [AutoLayout: Intrinsic Content Size, CHCR, Priority](https://github.com/cskime/ios-TIL/blob/master/201912/7주차/191216/[7-1]191216_AutoLayout2.md)
 - [UIStackView](https://github.com/cskime/ios-TIL/blob/master/201912/7주차/191216/[7-1]191216_UIStackView.md)
+- [UITableView](https://github.com/cskime/ios-TIL/blob/master/201912/7주차/191217/[7-2]191217_UITableView.md)
