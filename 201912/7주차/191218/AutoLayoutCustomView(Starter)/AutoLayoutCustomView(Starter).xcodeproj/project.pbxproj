@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC180F3123A88F4100C90C39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC180F3023A88F4100C90C39 /* AppDelegate.swift */; };
-		AC180F3323A88F4100C90C39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC180F3223A88F4100C90C39 /* SceneDelegate.swift */; };
-		AC180F3523A88F4100C90C39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC180F3423A88F4100C90C39 /* ViewController.swift */; };
-		AC180F3823A88F4100C90C39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC180F3623A88F4100C90C39 /* Main.storyboard */; };
-		AC180F3A23A88F4200C90C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC180F3923A88F4200C90C39 /* Assets.xcassets */; };
-		AC180F3D23A88F4200C90C39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC180F3B23A88F4200C90C39 /* LaunchScreen.storyboard */; };
+		4FD8115F23A9D328001AB5F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8115E23A9D328001AB5F6 /* AppDelegate.swift */; };
+		4FD8116523A9D329001AB5F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD8116423A9D329001AB5F6 /* Assets.xcassets */; };
+		4FD8116823A9D329001AB5F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD8116723A9D329001AB5F6 /* Preview Assets.xcassets */; };
+		4FD8116B23A9D329001AB5F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FD8116923A9D329001AB5F6 /* LaunchScreen.storyboard */; };
+		4FD8117323A9D3A2001AB5F6 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8117223A9D3A2001AB5F6 /* EmailViewController.swift */; };
+		4FD8117523A9D3AB001AB5F6 /* NickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8117423A9D3AB001AB5F6 /* NickNameViewController.swift */; };
+		4FD8117723A9D3BC001AB5F6 /* TextFieldType1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8117623A9D3BC001AB5F6 /* TextFieldType1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC180F2D23A88F4100C90C39 /* [7-2]191217_TableViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[7-2]191217_TableViewExample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC180F3023A88F4100C90C39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC180F3223A88F4100C90C39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC180F3423A88F4100C90C39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC180F3723A88F4100C90C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AC180F3923A88F4200C90C39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC180F3C23A88F4200C90C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AC180F3E23A88F4200C90C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FD8115B23A9D328001AB5F6 /* AutoLayoutCustomView(Starter).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AutoLayoutCustomView(Starter).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FD8115E23A9D328001AB5F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FD8116423A9D329001AB5F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FD8116723A9D329001AB5F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4FD8116A23A9D329001AB5F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4FD8116C23A9D329001AB5F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FD8117223A9D3A2001AB5F6 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		4FD8117423A9D3AB001AB5F6 /* NickNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameViewController.swift; sourceTree = "<group>"; };
+		4FD8117623A9D3BC001AB5F6 /* TextFieldType1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldType1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AC180F2A23A88F4100C90C39 /* Frameworks */ = {
+		4FD8115823A9D328001AB5F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +39,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AC180F2423A88F4100C90C39 = {
+		4FD8115223A9D328001AB5F6 = {
 			isa = PBXGroup;
 			children = (
-				AC180F2F23A88F4100C90C39 /* [7-2]191217_TableViewExample */,
-				AC180F2E23A88F4100C90C39 /* Products */,
+				4FD8115D23A9D328001AB5F6 /* AutoLayoutCustomView(Starter) */,
+				4FD8115C23A9D328001AB5F6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AC180F2E23A88F4100C90C39 /* Products */ = {
+		4FD8115C23A9D328001AB5F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC180F2D23A88F4100C90C39 /* [7-2]191217_TableViewExample.app */,
+				4FD8115B23A9D328001AB5F6 /* AutoLayoutCustomView(Starter).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AC180F2F23A88F4100C90C39 /* [7-2]191217_TableViewExample */ = {
+		4FD8115D23A9D328001AB5F6 /* AutoLayoutCustomView(Starter) */ = {
 			isa = PBXGroup;
 			children = (
-				AC180F3023A88F4100C90C39 /* AppDelegate.swift */,
-				AC180F3223A88F4100C90C39 /* SceneDelegate.swift */,
-				AC180F3423A88F4100C90C39 /* ViewController.swift */,
-				AC180F3623A88F4100C90C39 /* Main.storyboard */,
-				AC180F3923A88F4200C90C39 /* Assets.xcassets */,
-				AC180F3B23A88F4200C90C39 /* LaunchScreen.storyboard */,
-				AC180F3E23A88F4200C90C39 /* Info.plist */,
+				4FD8115E23A9D328001AB5F6 /* AppDelegate.swift */,
+				4FD8117823A9D4A8001AB5F6 /* View */,
+				4FD8117923A9D4AC001AB5F6 /* Controller */,
+				4FD8116423A9D329001AB5F6 /* Assets.xcassets */,
+				4FD8116923A9D329001AB5F6 /* LaunchScreen.storyboard */,
+				4FD8116C23A9D329001AB5F6 /* Info.plist */,
+				4FD8116623A9D329001AB5F6 /* Preview Content */,
 			);
-			path = "[7-2]191217_TableViewExample";
+			path = "AutoLayoutCustomView(Starter)";
+			sourceTree = "<group>";
+		};
+		4FD8116623A9D329001AB5F6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4FD8116723A9D329001AB5F6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4FD8117823A9D4A8001AB5F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FD8117623A9D3BC001AB5F6 /* TextFieldType1.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FD8117923A9D4AC001AB5F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4FD8117223A9D3A2001AB5F6 /* EmailViewController.swift */,
+				4FD8117423A9D3AB001AB5F6 /* NickNameViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC180F2C23A88F4100C90C39 /* [7-2]191217_TableViewExample */ = {
+		4FD8115A23A9D328001AB5F6 /* AutoLayoutCustomView(Starter) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC180F4123A88F4200C90C39 /* Build configuration list for PBXNativeTarget "[7-2]191217_TableViewExample" */;
+			buildConfigurationList = 4FD8116F23A9D329001AB5F6 /* Build configuration list for PBXNativeTarget "AutoLayoutCustomView(Starter)" */;
 			buildPhases = (
-				AC180F2923A88F4100C90C39 /* Sources */,
-				AC180F2A23A88F4100C90C39 /* Frameworks */,
-				AC180F2B23A88F4100C90C39 /* Resources */,
+				4FD8115723A9D328001AB5F6 /* Sources */,
+				4FD8115823A9D328001AB5F6 /* Frameworks */,
+				4FD8115923A9D328001AB5F6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "[7-2]191217_TableViewExample";
-			productName = "[7-2]191217_TableViewExample";
-			productReference = AC180F2D23A88F4100C90C39 /* [7-2]191217_TableViewExample.app */;
+			name = "AutoLayoutCustomView(Starter)";
+			productName = "AutoLayoutCustomView(Starter)";
+			productReference = 4FD8115B23A9D328001AB5F6 /* AutoLayoutCustomView(Starter).app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AC180F2523A88F4100C90C39 /* Project object */ = {
+		4FD8115323A9D328001AB5F6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = cskim;
+				ORGANIZATIONNAME = Kira;
 				TargetAttributes = {
-					AC180F2C23A88F4100C90C39 = {
+					4FD8115A23A9D328001AB5F6 = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
 			};
-			buildConfigurationList = AC180F2823A88F4100C90C39 /* Build configuration list for PBXProject "[7-2]191217_TableViewExample" */;
+			buildConfigurationList = 4FD8115623A9D328001AB5F6 /* Build configuration list for PBXProject "AutoLayoutCustomView(Starter)" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +137,48 @@
 				en,
 				Base,
 			);
-			mainGroup = AC180F2423A88F4100C90C39;
-			productRefGroup = AC180F2E23A88F4100C90C39 /* Products */;
+			mainGroup = 4FD8115223A9D328001AB5F6;
+			productRefGroup = 4FD8115C23A9D328001AB5F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC180F2C23A88F4100C90C39 /* [7-2]191217_TableViewExample */,
+				4FD8115A23A9D328001AB5F6 /* AutoLayoutCustomView(Starter) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AC180F2B23A88F4100C90C39 /* Resources */ = {
+		4FD8115923A9D328001AB5F6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC180F3D23A88F4200C90C39 /* LaunchScreen.storyboard in Resources */,
-				AC180F3A23A88F4200C90C39 /* Assets.xcassets in Resources */,
-				AC180F3823A88F4100C90C39 /* Main.storyboard in Resources */,
+				4FD8116B23A9D329001AB5F6 /* LaunchScreen.storyboard in Resources */,
+				4FD8116823A9D329001AB5F6 /* Preview Assets.xcassets in Resources */,
+				4FD8116523A9D329001AB5F6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AC180F2923A88F4100C90C39 /* Sources */ = {
+		4FD8115723A9D328001AB5F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC180F3523A88F4100C90C39 /* ViewController.swift in Sources */,
-				AC180F3123A88F4100C90C39 /* AppDelegate.swift in Sources */,
-				AC180F3323A88F4100C90C39 /* SceneDelegate.swift in Sources */,
+				4FD8115F23A9D328001AB5F6 /* AppDelegate.swift in Sources */,
+				4FD8117523A9D3AB001AB5F6 /* NickNameViewController.swift in Sources */,
+				4FD8117323A9D3A2001AB5F6 /* EmailViewController.swift in Sources */,
+				4FD8117723A9D3BC001AB5F6 /* TextFieldType1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AC180F3623A88F4100C90C39 /* Main.storyboard */ = {
+		4FD8116923A9D329001AB5F6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AC180F3723A88F4100C90C39 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AC180F3B23A88F4200C90C39 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC180F3C23A88F4200C90C39 /* Base */,
+				4FD8116A23A9D329001AB5F6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +186,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AC180F3F23A88F4200C90C39 /* Debug */ = {
+		4FD8116D23A9D329001AB5F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +246,7 @@
 			};
 			name = Debug;
 		};
-		AC180F4023A88F4200C90C39 /* Release */ = {
+		4FD8116E23A9D329001AB5F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,38 +300,40 @@
 			};
 			name = Release;
 		};
-		AC180F4223A88F4200C90C39 /* Debug */ = {
+		4FD8117023A9D329001AB5F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AutoLayoutCustomView(Starter)/Preview Content\"";
 				DEVELOPMENT_TEAM = D8Z3QRBB63;
-				INFOPLIST_FILE = "[7-2]191217_TableViewExample/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "AutoLayoutCustomView(Starter)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cskim.-7-2-191217-TableViewExample";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cskim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		AC180F4323A88F4200C90C39 /* Release */ = {
+		4FD8117123A9D329001AB5F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AutoLayoutCustomView(Starter)/Preview Content\"";
 				DEVELOPMENT_TEAM = D8Z3QRBB63;
-				INFOPLIST_FILE = "[7-2]191217_TableViewExample/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "AutoLayoutCustomView(Starter)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cskim.-7-2-191217-TableViewExample";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cskim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,25 +343,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC180F2823A88F4100C90C39 /* Build configuration list for PBXProject "[7-2]191217_TableViewExample" */ = {
+		4FD8115623A9D328001AB5F6 /* Build configuration list for PBXProject "AutoLayoutCustomView(Starter)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC180F3F23A88F4200C90C39 /* Debug */,
-				AC180F4023A88F4200C90C39 /* Release */,
+				4FD8116D23A9D329001AB5F6 /* Debug */,
+				4FD8116E23A9D329001AB5F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC180F4123A88F4200C90C39 /* Build configuration list for PBXNativeTarget "[7-2]191217_TableViewExample" */ = {
+		4FD8116F23A9D329001AB5F6 /* Build configuration list for PBXNativeTarget "AutoLayoutCustomView(Starter)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC180F4223A88F4200C90C39 /* Debug */,
-				AC180F4323A88F4200C90C39 /* Release */,
+				4FD8117023A9D329001AB5F6 /* Debug */,
+				4FD8117123A9D329001AB5F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AC180F2523A88F4100C90C39 /* Project object */;
+	rootObject = 4FD8115323A9D328001AB5F6 /* Project object */;
 }
