@@ -54,6 +54,8 @@ extension TableViewCellStyle: UITableViewDataSource {
     
     // 공통 속성 세팅
     cell.textLabel?.text = "\(indexPath.row * 1000)"
+    cell.detailTextLabel?.text = "\(indexPath.row * 1000)"
+    cell.imageView?.image = UIImage(named: "bear")
     
     return cell
   }
