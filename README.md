@@ -62,3 +62,9 @@
 - [AutoLayout: Intrinsic Content Size, CHCR, Priority](https://github.com/cskime/ios-TIL/blob/master/201912/7주차/191216/[7-1]191216_AutoLayout2.md)
 - [UIStackView](https://github.com/cskime/ios-TIL/blob/master/201912/7주차/191216/[7-1]191216_UIStackView.md)
 - [UITableView](https://github.com/cskime/ios-TIL/blob/master/201912/7주차/191217/[7-2]191217_UITableView.md)
+
+### Weak 8
+
+- [UINavigationController](https://github.com/cskime/ios-TIL/blob/master/201912/8주차/191223/[8-1]191223_UINavigationController.md)
+- [UITabBarController](https://github.com/cskime/ios-TIL/blob/master/201912/8주차/191223/[8-1]191223_UITabBarController.md)
+
