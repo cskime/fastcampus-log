@@ -20,7 +20,7 @@ class DisplayLabel: UILabel {
     }
     
     private func setupUI() {
-        self.allowsDefaultTighteningForTruncation = true
+        self.adjustsFontSizeToFitWidth = true
         self.minimumScaleFactor = 0.5
         self.font = .systemFont(ofSize: 60, weight: .semibold)
         self.textAlignment = .right
