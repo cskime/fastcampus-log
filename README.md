@@ -68,3 +68,7 @@
 - [UINavigationController](https://github.com/cskime/ios-TIL/blob/master/201912/8주차/191223/[8-1]191223_UINavigationController.md)
 - [UITabBarController](https://github.com/cskime/ios-TIL/blob/master/201912/8주차/191223/[8-1]191223_UITabBarController.md)
 
+### Weak 10
+
+- [URLScheme](https://github.com/cskime/ios-TIL/blob/master/202001/10주차/200106/[10-1]200106_URLScheme.md)
+- [UIImagePickerController](https://github.com/cskime/ios-TIL/blob/master/202001/10주차/200106/[10-1]200106_UIImagePicker.md)
