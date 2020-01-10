@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         self.setupUI()
     }
     
-    let colors: [UIColor] = [#colorLiteral(red: 0, green: 0.5467656255, blue: 0.9732442498, alpha: 1), #colorLiteral(red: 0.7100165486, green: 0.4391632974, blue: 0.9186503887, alpha: 1), #colorLiteral(red: 0.7431278825, green: 0.9347802401, blue: 0.2399184704, alpha: 1), #colorLiteral(red: 1, green: 0.4052651227, blue: 0.4514015317, alpha: 1), #colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1), #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)]
+    let colors: [UIColor] = [#colorLiteral(red: 0, green: 0.5467656255, blue: 0.9732442498, alpha: 1), #colorLiteral(red: 0.7100165486, green: 0.4391632974, blue: 0.9186503887, alpha: 1), #colorLiteral(red: 0.7431278825, green: 0.9347802401, blue: 0.2399184704, alpha: 1), #colorLiteral(red: 1, green: 0.4052651227, blue: 0.4514015317, alpha: 1), #colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1), #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1), #colorLiteral(red: 0.3176470697, green: 0.07450980693, blue: 0.02745098062, alpha: 1), #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)]
     var contentViews = [UIView]()
 
     private func setupUI() {
@@ -93,9 +93,9 @@ class ViewController: UIViewController {
 // MARK:- UIScrollViewDelegate
 
 extension ViewController: UIScrollViewDelegate {
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let pageWidth = scrollView.contentSize.width / CGFloat(contentViews.count)
-        let currentPage = scrollView.contentOffset.x / pageWidth
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let currentPage = scrollView.contentOffset.x / scrollView.frame.width
         self.pageControl.currentPage = Int(currentPage)
     }
 }
