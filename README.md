@@ -85,3 +85,7 @@
 ### Weak 12
 
 - [High Order Function](https://github.com/cskime/ios-TIL/blob/master/202001/12주차/200121/[12-1]200121_HighOrderFunction.md)
+
+### Weak 13
+
+- [UICollectionView](https://github.com/cskime/ios-TIL/blob/master/202001/13주차/200128/[13-1]200128_CollectionView.md)
