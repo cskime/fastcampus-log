@@ -14,7 +14,7 @@
 - `UICollectionViewCell` object. Collection View의 item 하나를 표현
 - **Section**단위의 그룹 안에서 표현
 - `IndexPath`의 `section`, `row`로 표현, Item 자체를 `item`으로 표현
-- 재사용(`dequeueReusableCell(withReusableIdentifier:for:)`)
+- 재사용
 - **`Layout` object의 주 용도**가 cell(item)들을 collection view 위에 배치하는 것
 
 ### Supplementary Views
@@ -61,27 +61,36 @@
 - `numberOfSections(in:)` : Collection view의 section 개수 설정
 - `collectionView(_:numberOfItemsInSection:)` : Collection view에서 section당 item 개수 설정
 - `collectionView(_:cellForItemAt:)` : `UICollectionViewCell`의 content에 data를 전달하기 위한 method
-  - `dequeueReusableCell(withReuseIdentifier:for:)` : `UICollectionViewCell`을 재사용하기 위한 method.
-  - `dequeueReusableSupplementaryView(ofKind:withReuseIdentifier:for:)` : Collection view에서 Header / Footer 역할을 하는 `UICollectionReusableView`를 재사용하기 위한 method
 
 ## UICollectionViewDelegate
 
-### Observe displaying items
+### Obseving Display Cell
 
-- `collectionView(_:willDisplay:forItemAt:)`
-- `collectionView(_:didEndDisplaying:forItemAt:)`
+- `collectionView(_:willDisplay:forItemAt:)` : Cell이 화면에 나타나기 직전 호출
+- `collectionView(_:didEndDisplaying:forItemAt:)` : Cell이 화면에 완전히 나타난 뒤 호출
 
-### Observe touching items
+### Observing Select Items
 
-- `collectionView(_:shouldSelectItemAt:)`
-- `collectionView(_:didSelectItemAt:)`
-- `collectionView(_:shouldHighlightItemAt:)`
-- `collectionView(_:didHighlightItemAt:)`
+- `collectionView(_:shouldSelectItemAt:)` : Collection view의 item에 `isSelected` 결정
+- `collectionView(_:didSelectItemAt:)` : Collection view의 item이 select 되었을 때 호출
+- `collectionView(_:didDeselectItemAt:)` : Collection view의 item이 deselect 되었을 때 호출
+
+### Observing Highlight Items
+
+- `collectionView(_:shouldHighlightItemAt:)` : Collection view의 item에 `isHighlighted` 결정
+- `collectionView(_:didHighlightItemAt:)` : Collection view의 item이 highlight 되었을 때 호출
+- `collectionView(_:didUnhighlightItemAt:)` : Collection view의 item이 unhighlight 되었을 때 호출
+
+### Observing Multiple Selection
+
+- `collectionView(_:shouldBeginMultipleSelectionInteractionAt:)` : Collection view에서 dragging하는 multiple selection을 허용할 것인지 결정
+- `collectionView(_:didBeginMultipleSelectionInteractionAt:)` : Collection view에서 dragging하는 multiple selection을 시작할 때 호출
+- `collectionViewDidEndMultipleSelectionInteraction(_:)` : Collection view에서 dragging하는 multiple selection을 끝냈을 때 호출
 
 ## UICollectionViewDelegateFlowLayout
 
 - `UICollectionViewFlowLayout`에서 설정할 수 있는 속성들을 `indexPath`에 따라 **동적으로 설정**할 수 있음
-- `UICollectionViewDelegate` 프로토콜이 함께 채택되어 있다.
+- `UICollectionViewDelegate` 프로토콜이 함께 채택되어 있다.
 
 ```swift
 protocol UICollectionViewDelegateFlowLayout: UICollectionViewDelegate {
@@ -118,11 +127,36 @@ protocol UICollectionViewDelegateFlowLayout: UICollectionViewDelegate {
 ## UICollectionViewCell
 
 - ContentView 위에 CustomView가 올라오게 됨.
-- `allowsSelection` 속성이 `true`일 때 `isSelected`, `isHighlighted` 속성을 사용할 수 있음
-  - `isHighlighted` : Cell을 터치하고 있는 동안 `true`
-  - `isSelected` : Cell을 터치한 뒤 손을 떼면 `true`
-  - Touch -> `isHighlighted = true` -> Touch Up -> `isSelected = true` - > touch end
-- `UITableViewCell`과 달리, 기본적인 `titleLabel`이나 `imageView`가 제공되지 않음
+
+- `UITableViewCell`과 달리, 기본적인 `titleLabel`이나 `imageView`가 제공되지 않음
+
+- `UITableView`같이 **재사용 큐**를 이용한 cell의 재사용
+
+  - `dequeueReusableCell(withReuseIdentifier:for:)` : `UICollectionViewCell`을 재사용하기 위한 method.
+  - `dequeueReusableSupplementaryView(ofKind:withReuseIdentifier:for:)` : Collection view에서 **Header / Footer** 역할을 하는 `UICollectionReusableView`를 재사용하기 위한 method
+
+- `allowsSelection` 속성이 `true`일 때 `isSelected`, `isHighlighted` 속성을 사용할 수 있음
+
+  - `isHighlighted` : Cell을 터치하고 있는 동안 `true`, 손을 떼면 `false`
+  - `isSelected`
+    - Cell을 터치한 뒤 손을 떼면 `true`
+    - 단일 selection : Select된 cell을 다시 touch하거나 다른 cell을 select하면 `false`
+    - 다중 selection : Select된 cell을 다시 touch하면 `false`
+  - Touch -> `isHighlighted = true` -> Touch Up -> `isSelected = true` - > touch end
+
+- `UICollectionView`에서 cell을 재사용 할 때, **select된 `indexPath`의 `isSelected` 속성을 내부적으로 기억**하고 있다. Cell이 선택되었을 때 동작을 `isSelected` 속성을 `override`해서 구현하면 선택된 cell의 `indexPath`를 기억하기 때문에 cell을 재사용해도 섞이지 않는다.
+
+  ```swift
+  override var isSelected: Bool {
+  	didSet {
+    	print("isSelected :", isSelected)
+      self.checkImageView.isHidden = !self.isSelected
+      self.blindView.backgroundColor = self.isSelected ? 
+      																 UIColor.black.withAlphaComponent(0.4) : 
+      																 .clear
+  	}
+  }
+  ```
 
 ## Tips
 
