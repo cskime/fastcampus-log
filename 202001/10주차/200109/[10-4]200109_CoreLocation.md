@@ -56,6 +56,15 @@
 
 - `locationManager.startUpdatingLocation()` : 사용자의 현재 위치 정보를 갱신
 
+  - `locationManager.desiredAccuracy` : 위치 정보의 정밀도. 기본값 `kCLLocationAccuracyBest`
+
+  - `locationManager.distanceFilter` : 위치 정보 update 이벤트를 발생시키기 위해 필요한 최소 이동 거리를 설정함. `kCLDistanceFilterNone`이 기본값으로, 모든 이동을 감지할 때 마다 update함
+
+    ```swift
+    locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+    locationManager.distanceFilter = 10.0
+    ```
+
 - `locationManager.stopUpdatingLocation()` : 위치 정보 갱신을 멈추기
 
 - `locationManager.locationServicesEnabled()` :  위치 서비스를 사용할 수 있는지 확인하기
@@ -91,15 +100,6 @@
      */
     if abs(timeStamp.timeIntervalSinceNow) < 10 { ... }
   }
-  ```
-
-- `locationManager.desiredAccuracy` : 위치 정보의 정밀도 설정. `kCLLocationAccuracyBest`가 기본값
-
-- `locationManager.distanceFilter` : 위치 정보 update 이벤트를 발생시키기 위해 필요한 최소 이동 거리를 설정함. `kCLDistanceFilterNone`이 기본값으로, 모든 이동을 감지할 때 마다 update함
-
-  ```swift
-  locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-  locationManager.distanceFilter = 10.0
   ```
 
 ### Updating Heading
@@ -191,8 +191,6 @@
   }
   ```
 
-  
-
 - **Reverse Geocode** : Coordinate -> Placemark(좌표를 지명으로) 변환. `reverseGeocodeLocation()`
 
   ```swift
@@ -216,5 +214,5 @@
 
 - `CLGeocoder` 객체는 단일 객체로, 하나의 사용자 action에서 하나의 geocoding만 요청해야함
 - 일반적인 상황에서는 분당 하나 이상의 geocode 요청을 보내지 말것
-- 앱이 Foreground 상태여서 사용자가 결과를 즉시 확인할 수 있을 때만 사용할 것
+- 앱이 Foreground 상태여서 사용자가 결과를 즉시 확인할 수 있을 때만 사용할 것
 
