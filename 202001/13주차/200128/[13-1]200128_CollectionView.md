@@ -1,7 +1,7 @@
 # UICollectionView
 
 - `UICollectionView`는 `UITableView`같이 `dataSource`와 `delegate`을 이용해 데이터를 collection 형식으로 화면에 표시하는 object
-- `UITableView`와 달리 `UICollectionViewLayout` object를 통해 `UICollectionView`에서 item(`UICollectionViewCell`)의 위치 및 크기를 설정해야함
+- `UITableView`와 달리 `UICollectionViewLayout` object를 통해 `UICollectionView`에서 item(`UICollectionViewCell`)의 위치 및 크기를 설정해야함
 
 ## Content Management
 
@@ -41,26 +41,93 @@
 ### Flow Layout
 
 - 기본으로 제공되는 layout
-  - `itemSize` : `UICollectionViewCell`의 크기 지정
-  - `headerReferenceSize` : `UICollectionView`의 footer size 지정
-  - `footerReferenceSize` : `UICollectionView`의 footer size 지정
-  - `minimumLineSpacing` : Scrolling direction 방향으로 item(cell) 사이의 너비 지정(**Cell Spacing**)
-  - `minimumInteritemSpacing` : Scrolling direction의 수직 방향으로 item(cell) 사이의 너비 지정(**Line Spacing**)
-  - `sectionInset` : Content의 `UICollectionView` 안쪽에서의 너비. `UIEdgeInsets`(**Section Inset**)
-  - `scrollDirection` : `UICollectionView`의 스크롤 방향 설정.
 - **Scrolling Direction과 수직 방향으로** item(cell)이 생성되고 데이터가 쌓여 나감
 - 관련 object : `UICollectionViewFlowLayout`, `UICollectionViewDelegateFlowLayout`
+
+#### Scroll Direction
+
+- `scrollDirection` : `UICollectionView`의 스크롤 방향 설정.
+
+#### Congifure Item
+
+- `itemSize` : `UICollectionViewCell`의 크기 지정
+- `minimumLineSpacing` : Scrolling direction 방향으로 item(cell) 사이의 너비 지정(**Cell Spacing**)
+- `minimumInteritemSpacing` : Scrolling direction의 수직 방향으로 item(cell) 사이의 너비 지정(**Line Spacing**)
+- `sectionInset` : Content의 `UICollectionView` 안쪽에서의 너비. `UIEdgeInsets`(**Section Inset**)
+
+#### Congifure Supplementary View(Header/Footer)
+
+- `headerReferenceSize` : `UICollectionView`의 footer size 지정. 기본값 `(0, 0)`
+- `footerReferenceSize` : `UICollectionView`의 footer size 지정. 기본값 `(0, 0)`
+  - 세로 스크롤에서는 `width`가 collection view의 `width`에 따라 정해지므로 **`height`만 적용됨**
+  - 가로 스크롤에서는 `height`가 collection view의 `height`에 따라 정해지므로 **`width`만 적용됨**
+- `sectionHeadersPinToVisibleBounds` : 스크롤할 때 header view가 상단에 고정
+- `sectionFootersPinToVisibleBounds` : 스크롤할 때 footer view가 하단에 고정
 
 ### Custom Layout
 
 - Flow layout 외에 직접 만들어 사용하는 layout
 - 관련 object : `UICollectionViewLayout`, `UICollectionViewLayoutAttributes`, `UICollectionViewUpdateItem`
 
+## UICollectionViewCell
+
+- ContentView 위에 CustomView가 올라가는 구조
+
+  - BackgroundView > SelectedBackgroundView > ContentView > CustomView
+
+- `UITableViewCell`과 달리, 기본적인 `titleLabel`이나 `imageView`가 제공되지 않음
+
+- `UITableView`같이 **재사용 큐**를 이용한 cell의 재사용
+
+  - `register(_:forCellWithReuseIdentifier:)` : Code 사용 시 collection view에서 재사용할 cell 등록
+  - `dequeueReusableCell(withReuseIdentifier:for:)` : `UICollectionViewCell`을 재사용하기 위한 method.
+
+- `allowsSelection` 속성이 `true`일 때 `isSelected`, `isHighlighted` 속성을 사용할 수 있음
+
+  - `isHighlighted` : Cell을 터치하고 있는 동안 `true`, 손을 떼면 `false`
+  - `isSelected`
+    - Cell을 터치한 뒤 손을 떼면 `true`
+    - 단일 selection : Select된 cell을 다시 touch하거나 다른 cell을 select하면 `false`
+    - 다중 selection : Select된 cell을 다시 touch하면 `false`
+  - Touch -> `isHighlighted = true` -> Touch Up -> `isSelected = true` - > touch end
+
+- `UICollectionView`에서 cell을 재사용 할 때, **select된 `indexPath`의 `isSelected` 속성을 내부적으로 기억**하고 있다. Cell이 선택되었을 때 동작을 `isSelected` 속성을 `override`해서 구현하면 선택된 cell의 `indexPath`를 기억하기 때문에 cell을 재사용해도 섞이지 않는다.
+
+  ```swift
+  override var isSelected: Bool {
+  	didSet {
+    	print("isSelected :", isSelected)
+      self.checkImageView.isHidden = !self.isSelected
+      self.blindView.backgroundColor = self.isSelected ? 
+      																 UIColor.black.withAlphaComponent(0.4) : 
+      																 .clear
+  	}
+  }
+  ```
+
+## UICollectionReusableView
+
+- `register(_:forSupplementaryViewOfKind:withReuseIdentifier)` : Code로 사용 시 collection view에서 재사용할 supplementary view 등록
+  - Header : `UICollectionView.elementKindSectionHeader`로 등록
+  - Footer : `UICollectionView.elementKindSectionFooter`로 등록
+- `dequeueReusableSupplementaryView(ofKind:withReuseIdentifier:for:)` : Collection view에서 **Header / Footer** 역할을 하는 `UICollectionReusableView`를 재사용하기 위한 method
+
 ## UICollectionViewDataSource
+
+### Configure Cell
 
 - `numberOfSections(in:)` : Collection view의 section 개수 설정
 - `collectionView(_:numberOfItemsInSection:)` : Collection view에서 section당 item 개수 설정
 - `collectionView(_:cellForItemAt:)` : `UICollectionViewCell`의 content에 data를 전달하기 위한 method
+
+### Configure Supplementary View
+
+- `collectionView(_:viewForSupplementaryElementOfKind:at:)` : Collection view에서 header, footer view 역할을 하는 supplementary view 반환. Supplementary view의 content에 data를 전달하기 위한 method
+
+### Interactive Movement
+
+- `collectionView(_:canMoveItemAt:)` : `UICollectionView`에서 `beginInteractiveMovementForItem()`을 호출하면 실행되는 method. `true`를 반환해야 interactive movement 기능 사용 가능
+- `collectionView(_:moveItemAt:to:)` : `endInteractiveMovement()`를 호출하면 실행되는 method. Item을 끌어 움직이다가 놓는 순간 호출됨
 
 ## UICollectionViewDelegate
 
@@ -124,41 +191,7 @@ protocol UICollectionViewDelegateFlowLayout: UICollectionViewDelegate {
 }
 ```
 
-## UICollectionViewCell
-
-- ContentView 위에 CustomView가 올라오게 됨.
-
-- `UITableViewCell`과 달리, 기본적인 `titleLabel`이나 `imageView`가 제공되지 않음
-
-- `UITableView`같이 **재사용 큐**를 이용한 cell의 재사용
-
-  - `dequeueReusableCell(withReuseIdentifier:for:)` : `UICollectionViewCell`을 재사용하기 위한 method.
-  - `dequeueReusableSupplementaryView(ofKind:withReuseIdentifier:for:)` : Collection view에서 **Header / Footer** 역할을 하는 `UICollectionReusableView`를 재사용하기 위한 method
-
-- `allowsSelection` 속성이 `true`일 때 `isSelected`, `isHighlighted` 속성을 사용할 수 있음
-
-  - `isHighlighted` : Cell을 터치하고 있는 동안 `true`, 손을 떼면 `false`
-  - `isSelected`
-    - Cell을 터치한 뒤 손을 떼면 `true`
-    - 단일 selection : Select된 cell을 다시 touch하거나 다른 cell을 select하면 `false`
-    - 다중 selection : Select된 cell을 다시 touch하면 `false`
-  - Touch -> `isHighlighted = true` -> Touch Up -> `isSelected = true` - > touch end
-
-- `UICollectionView`에서 cell을 재사용 할 때, **select된 `indexPath`의 `isSelected` 속성을 내부적으로 기억**하고 있다. Cell이 선택되었을 때 동작을 `isSelected` 속성을 `override`해서 구현하면 선택된 cell의 `indexPath`를 기억하기 때문에 cell을 재사용해도 섞이지 않는다.
-
-  ```swift
-  override var isSelected: Bool {
-  	didSet {
-    	print("isSelected :", isSelected)
-      self.checkImageView.isHidden = !self.isSelected
-      self.blindView.backgroundColor = self.isSelected ? 
-      																 UIColor.black.withAlphaComponent(0.4) : 
-      																 .clear
-  	}
-  }
-  ```
-
-## Tips
+## Tips and Tricks
 
 ### CaseIterable
 
@@ -175,6 +208,49 @@ protocol UICollectionViewDelegateFlowLayout: UICollectionViewDelegate {
                                  .map({ "\($0)" })
                                  .joined(separator: ", ")
   // caseList == "north, south, east, west"
+  ```
+
+
+### FloatingPointRoundingRule
+
+- `Double`, `Float`, `CGFloat` 등 소수점을 갖는 값에 대해 `rule`에 따라 소수점 처리
+
+- `round()` : 값 자체를 변경, `rounded()` : 변경된 값을 변경
+
+  - `awayFromZero`, `.up` : 소수점 자리수를 올림 연산
+  - `towardZero`, `.down` : 소수점 자리수를 버림 연산
+  - `toNearestOrEven`, `toNearestOrAwayFromZero` : 소수점 반올림
+
+  ```swift
+  let underHalf: CGFloat = 6.1
+  let overHalf: CGFloat = 6.5
+  
+  underHalf.rounded(.up)	// 7.0
+  overHalf.rounded(.up)		// 7.0
+  underHalf.rounded(.awayFromZero)	// 7.0
+  overHalf.rounded(.awayFromZero)		// 7.0
+  
+  underHalf.rounded(.down)	// 6.0
+  overHalf.rounded(.down)		// 6.0
+  underHalf.rounded(.towardZero)	// 6.0
+  overHalf.rounded(.towardZero)		// 6.0
+  
+  underHalf.rounded(.toNearestOrEven)		// 6.0
+  overHalf.rounded(.toNearestOrEven)		// 7.0
+  underHalf.rounded(.toNearestOrAwayFromZero)		// 6.0
+  overHalf.rounded(.toNearestOrAwayFromZero)		// 7.0
+  ```
+
+### Blur Effect
+
+- `UIVisualEffectView` 객체를 subview로 추가함으로써 view에 특정 효과를 줄 수 있다
+
+- `UIBlurEffect` 객체를 `UIVisualEffectView`에 적용시켜서 view에 blur 효과를 줄 수 있다.
+
+  ```swift
+  let effectView = UIVisualEffectView()
+  effectView.effect = UIBlurEffect(style: .dark)
+  view.addSubview(effectView)
   ```
 
   

@@ -31,6 +31,15 @@ final class SectionHeaderView: UICollectionReusableView {
   
   func setupViews() {
     // 뷰 설정하기
+    let blurEffect = UIBlurEffect(style: .dark)
+    self.blurView.effect = blurEffect
+    addSubview(self.blurView)
+    
+    blurView.contentView.addSubview(imageView)
+    
+    titleLabel.textColor = .white
+    titleLabel.font = .preferredFont(forTextStyle: .title2)
+    blurView.contentView.addSubview(titleLabel)
   }
   
   func setupConstraints() {

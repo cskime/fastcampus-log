@@ -56,9 +56,10 @@ final class SectionCell: UICollectionViewCell {
       titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
       titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
       titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+      titleLabel.heightAnchor.constraint(equalToConstant: 25)
       ])
     
-    titleLabel.setContentCompressionResistancePriority(.required, for: .vertical)
+//    titleLabel.setContentCompressionResistancePriority(.required, for: .vertical)
   }
 
   

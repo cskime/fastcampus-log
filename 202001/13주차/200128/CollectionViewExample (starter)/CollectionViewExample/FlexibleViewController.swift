@@ -25,11 +25,26 @@ final class FlexibleViewController: UIViewController {
   // MARK: Setup CollectionView
   
   func setupCollectionView() {
-    
+    self.setupFlowLayout()
+    self.collectionView.register(CustomCell.self, forCellWithReuseIdentifier: CustomCell.identifier)
+    self.collectionView.backgroundColor = .white
+    self.collectionView.dataSource = self
+    self.view.addSubview(self.collectionView)
   }
   
   func setupFlowLayout() {
+    // 세로 방향 스크롤 기준
+    let itemsInLine: CGFloat = 3  // line당 item 개수
+    let spacing: CGFloat = 10
+    let insets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+    let collectionViewWidth = self.collectionView.bounds.width
+    let contentSize = (collectionViewWidth - insets.left - insets.right - (spacing * (itemsInLine - 1)))
+    let itemSize = (contentSize / itemsInLine).rounded(.down) // 소수점 버리기    
     
+    self.layout.minimumLineSpacing = spacing
+    self.layout.minimumInteritemSpacing = spacing
+    self.layout.sectionInset = insets
+    self.layout.itemSize = CGSize(width: itemSize, height: itemSize)
   }
 }
 
@@ -47,6 +62,8 @@ extension FlexibleViewController: UICollectionViewDataSource {
       ) as! CustomCell
     cell.backgroundColor = .black
 
+    let item = indexPath.item % self.parkImages.count
+    cell.configure(image: UIImage(named: parkImages[item]), title: parkImages[item])
     
     
     return cell
