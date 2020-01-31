@@ -89,3 +89,5 @@
 ### Weak 13
 
 - [UICollectionView](https://github.com/cskime/ios-TIL/blob/master/202001/13주차/200128/[13-1]200128_CollectionView.md)
+- [Error Handling](https://github.com/cskime/ios-TIL/blob/master/202001/13주차/200131/[13-5]200131_ErrorHandling.md)
+
