@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ffL-zA-h44">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Xgs-Fo-KBE">
+            <objects>
+                <viewController id="ffL-zA-h44" customClass="ViewController" customModule="CustomLogExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lai-IT-0AW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="s0P-Hu-qh6">
+                                <rect key="frame" x="41" y="268.66666666666669" width="293" height="285.00000000000006"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kTN-Av-vWg">
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="33"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7F-CQ-GDT">
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="33"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <state key="normal" title="Print"/>
+                                                <connections>
+                                                    <action selector="didTapPrint:" destination="ffL-zA-h44" eventType="touchUpInside" id="Uk7-Ra-sUP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKD-dn-vEh">
+                                                <rect key="frame" x="101" y="0.0" width="91" height="33"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <state key="normal" title="DebugPrint"/>
+                                                <connections>
+                                                    <action selector="didTapDebugPrint:" destination="ffL-zA-h44" eventType="touchUpInside" id="PI6-bW-7V9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsz-dr-HPf">
+                                                <rect key="frame" x="202" y="0.0" width="91" height="33"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <state key="normal" title="Dump"/>
+                                                <connections>
+                                                    <action selector="didTapDump:" destination="ffL-zA-h44" eventType="touchUpInside" id="lC2-0u-7bR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdd-8M-gLY">
+                                        <rect key="frame" x="0.0" y="63" width="293" height="33"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="NSLog"/>
+                                        <connections>
+                                            <action selector="didTapNSLog:" destination="ffL-zA-h44" eventType="touchUpInside" id="zlS-ww-sGG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdP-vP-yWb">
+                                        <rect key="frame" x="0.0" y="126" width="293" height="33"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="Speical Literals"/>
+                                        <connections>
+                                            <action selector="didTapSpecialLiterals:" destination="ffL-zA-h44" eventType="touchUpInside" id="hNP-kZ-Yle"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPB-pg-pb0">
+                                        <rect key="frame" x="0.0" y="189" width="293" height="33"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="Custom Log"/>
+                                        <connections>
+                                            <action selector="didTapCustomLog:" destination="ffL-zA-h44" eventType="touchUpInside" id="L67-4Y-ux3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fT-nT-YI0">
+                                        <rect key="frame" x="0.0" y="251.99999999999994" width="293" height="33"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="Test Button"/>
+                                        <connections>
+                                            <action selector="didTapTestButton:" destination="ffL-zA-h44" eventType="touchUpInside" id="rYS-fV-WCQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s0P-Hu-qh6" firstAttribute="centerY" secondItem="9mN-jn-kKW" secondAttribute="centerY" id="GTl-77-KEc"/>
+                            <constraint firstItem="s0P-Hu-qh6" firstAttribute="centerX" secondItem="9mN-jn-kKW" secondAttribute="centerX" id="Hai-Oa-Svc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9mN-jn-kKW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b0J-pU-QRK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="95"/>
+        </scene>
+    </scenes>
+</document>
