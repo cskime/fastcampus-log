@@ -96,3 +96,9 @@
 - [Data Structure](https://github.com/cskime/ios-TIL/blob/master/202002/14주차/200203/[14-1]200203_DataStructure.md)
 - [Linked List](https://github.com/cskime/ios-TIL/blob/master/202002/14주차/200203/[14-1]200203_LinkedList.md)
 - [Algorithm](https://github.com/cskime/ios-TIL/blob/master/202002/14주차/200204/[14-2]200204_Algorithm.md)
+
+### Weak 15
+
+- [UIDevice](https://github.com/cskime/ios-TIL/blob/master/202002/15주차/200210/[15-1]200210_UIDevice.md)
+- [NSNotification: Keyboard Notification](https://github.com/cskime/ios-TIL/blob/master/202002/15주차/200210/[15-1]200210_NSNotification.md)
+
