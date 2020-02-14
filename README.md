@@ -1,6 +1,6 @@
 # ios-TIL
 
-- Daily iOS study log
+😎Daily iOS Study Log in FastCampus iOS School
 
 ## Contents
 
