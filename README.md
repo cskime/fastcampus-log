@@ -4,7 +4,7 @@
 
 ## Contents
 
-### Weak 1
+### Week 1
 
 - [컴퓨터 개론](https://github.com/cskime/ios-school/blob/master/201911/1주차/191104/[1-1]191104_컴퓨터개론.md)
 - [Git](https://github.com/cskime/ios-school/blob/master/201911/1주차/191105/[1-2]191105_Git.md)
@@ -24,7 +24,7 @@
 - [Enumeration](https://github.com/cskime/ios-TIL/blob/master/201911/2주차/191114/[2-4]191114_Enumerations.md)
 - [Closure](https://github.com/cskime/ios-TIL/blob/master/201911/2주차/191115/[2-5]191115_Closure.md)
 
-### Weak 3
+### Week 3
 
 - [OOP and Class Basic](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191118/[3-1]191118_OOP와_Class.md)
 - [OOP의 4대 특성](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191119/[3-2]191119_OOP_4대특성.md)
@@ -33,7 +33,7 @@
 - [Xcode: SceneDelegate and AppDelegate](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191121/[3-4]191121_Xcode_Project.md)
 - [UIGuide: Point vs. Pixel, Frame vs. Bounds](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191122/[3-5]191122_UIGuide.md)
 
-### Weak 4
+### Week 4
 
 - [UIViewContentMode](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191122/[3-5]191122_UIViewContentMode.md)
 - [UIViewController](https://github.com/cskime/ios-TIL/blob/master/201911/4주차/191125/[4-1]191125_UIViewController.md)
@@ -41,7 +41,7 @@
 - [UITextField](https://github.com/cskime/ios-TIL/blob/master/201911/4주차/191126/[4-2]191126_UITextField.md)
 - [UIAlertController](https://github.com/cskime/ios-TIL/blob/master/201911/4주차/191126/[4-2]191126_UIAlertController.md)
 
-### Weak 5
+### Week 5
 
 - [Storyboard Segueway](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191203/[5-2]191203_Segue.md)
 - [Type Casting](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191205/[5-4]191205_TypeCasting.md)
@@ -49,7 +49,7 @@
 - [Singleton](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191206/[5-5]191206_Singleton.md)
 - [UserDefaults](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191206/[5-5]191206_UserDefaults.md)
 
-### Weak 6
+### Week 6
 
 - [Struct](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191209/[6-2]191209_Struct.md)
 - [Memory Management(ARC)](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191209/[6-1]191209_Memory_Management.md)
@@ -57,18 +57,18 @@
 - [AutoLayout Basic](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191212/[6-4]191212_AutoLayout.md)
 - [Practice Project: Login Page](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191213/[6-5]191213_LoginPageProject.md)
 
-### Weak 7
+### Week 7
 
 - [AutoLayout: Intrinsic Content Size, CHCR, Priority](https://github.com/cskime/ios-TIL/blob/master/201912/7주차/191216/[7-1]191216_AutoLayout2.md)
 - [UIStackView](https://github.com/cskime/ios-TIL/blob/master/201912/7주차/191216/[7-1]191216_UIStackView.md)
 - [UITableView](https://github.com/cskime/ios-TIL/blob/master/201912/7주차/191217/[7-2]191217_UITableView.md)
 
-### Weak 8
+### Week 8
 
 - [UINavigationController](https://github.com/cskime/ios-TIL/blob/master/201912/8주차/191223/[8-1]191223_UINavigationController.md)
 - [UITabBarController](https://github.com/cskime/ios-TIL/blob/master/201912/8주차/191223/[8-1]191223_UITabBarController.md)
 
-### Weak 10
+### Week 10
 
 - [URLScheme](https://github.com/cskime/ios-TIL/blob/master/202001/10주차/200106/[10-1]200106_URLScheme.md)
 - [UIImagePickerController](https://github.com/cskime/ios-TIL/blob/master/202001/10주차/200106/[10-1]200106_UIImagePicker.md)
@@ -77,27 +77,27 @@
 - [MapKit](https://github.com/cskime/ios-TIL/blob/master/202001/10주차/200109/[10-4]200109_MKMapKit.md)
 - [UIScrollView](https://github.com/cskime/ios-TIL/blob/master/202001/10주차/200110/[10-5]200110_UIScrollView.md)
 
-### Weak 11
+### Week 11
 
 - [UIViewAnimation](https://github.com/cskime/ios-TIL/blob/master/202001/11주차/200110/[11-1]200113_UIViewAnimation.md)
 - [Practice : SlackNewWorkspaceUI](https://github.com/cskime/ios-TIL/tree/master/202001/11주차/200114/[11-2]200114_SlackNewWorkspaceUI)
 
-### Weak 12
+### Week 12
 
 - [High Order Function](https://github.com/cskime/ios-TIL/blob/master/202001/12주차/200121/[12-1]200121_HighOrderFunction.md)
 
-### Weak 13
+### Week 13
 
 - [UICollectionView](https://github.com/cskime/ios-TIL/blob/master/202001/13주차/200128/[13-1]200128_CollectionView.md)
 - [Error Handling](https://github.com/cskime/ios-TIL/blob/master/202001/13주차/200131/[13-5]200131_ErrorHandling.md)
 
-### Weak 14
+### Week 14
 
 - [Data Structure](https://github.com/cskime/ios-TIL/blob/master/202002/14주차/200203/[14-1]200203_DataStructure.md)
 - [Linked List](https://github.com/cskime/ios-TIL/blob/master/202002/14주차/200203/[14-1]200203_LinkedList.md)
 - [Algorithm](https://github.com/cskime/ios-TIL/blob/master/202002/14주차/200204/[14-2]200204_Algorithm.md)
 
-### Weak 15
+### Week 15
 
 - [UIDevice](https://github.com/cskime/ios-TIL/blob/master/202002/15주차/200210/[15-1]200210_UIDevice.md)
 - [NSNotification: Keyboard Notification](https://github.com/cskime/ios-TIL/blob/master/202002/15주차/200210/[15-1]200210_NSNotification.md)
