@@ -29,18 +29,19 @@
 |             | 19.11.22 | [UIGuide: Point vs. Pixel, Frame vs. Bounds](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191122/[3-5]191122_UIGuide.md) |
 | **Week 4**  | 19.11.25 | [UIViewController](https://github.com/cskime/ios-TIL/blob/master/201911/4주차/191125/[4-1]191125_UIViewController.md)<br />[Modal Presentation](https://github.com/cskime/ios-TIL/blob/master/201911/4주차/191125/[4-1]191125_Modal_Presentation.md)<br />[UIViewContentMode](https://github.com/cskime/ios-TIL/blob/master/201911/3주차/191122/[3-5]191122_UIViewContentMode.md) |
 |             | 19.11.26 | [UIAlertController](https://github.com/cskime/ios-TIL/blob/master/201911/4주차/191126/[4-2]191126_UIAlertController.md)<br />[UITextField](https://github.com/cskime/ios-TIL/blob/master/201911/4주차/191126/[4-2]191126_UITextField.md) |
-|             | 19.11.29 | [1차 시험](https://github.com/cskime/FCM-Projects/tree/master/TEST1-Order) |
+|             | 19.11.29 | [1차 시험: Simple Order](https://github.com/cskime/ios-TIL/tree/master/Tasks/TEST1-Order) |
 | **Week 5**  | 19.12.03 | [Storyboard Segueway](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191203/[5-2]191203_Segue.md) |
 |             | 19.12.05 | [Initializer](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191205/[5-4]191205_Initializer.md)<br />[Type Casting](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191205/[5-4]191205_TypeCasting.md) |
 |             | 19.12.06 | [UserDefaults](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191206/[5-5]191206_UserDefaults.md)<br />[Singleton](https://github.com/cskime/ios-TIL/blob/master/201912/5주차/191206/[5-5]191206_Singleton.md) |
 | **Week 6**  | 19.12.09 | [Memory Management(ARC)](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191209/[6-1]191209_Memory_Management.md)<br />[Struct](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191209/[6-2]191209_Struct.md) |
 |             | 19.12.10 | [Delegate Pattern](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191210/[6-2]191210_Delegate.md) |
 |             | 19.12.12 | [AutoLayout Basic](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191212/[6-4]191212_AutoLayout.md) |
-|             | 19.12.13 | [Practice Project: Login Page](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191213/[6-5]191213_LoginPageProject.md)<br />[Basic Login Page](https://github.com/cskime/FCM-Projects/tree/master/BasicLoginPage) |
+|             | 19.12.13 | [Practice Project: Login Page](https://github.com/cskime/ios-TIL/blob/master/201912/6주차/191213/[6-5]191213_LoginPageProject.md)<br />[Basic Login Page](https://github.com/cskime/ios-TIL/tree/master/Tasks/BasicLoginPage) |
 | **Week 7**  | 19.12.16 | [AutoLayout: Intrinsic Content Size, CHCR, Priority](https://github.com/cskime/ios-TIL/blob/master/201912/7주차/191216/[7-1]191216_AutoLayout2.md)<br />[UIStackView](https://github.com/cskime/ios-TIL/blob/master/201912/7주차/191216/[7-1]191216_UIStackView.md) |
 |             | 19.12.17 | [UITableView](https://github.com/cskime/ios-TIL/blob/master/201912/7주차/191217/[7-2]191217_UITableView.md) |
-|             | 19.12.20 | [Basic Calculator](https://github.com/cskime/FCM-Projects/tree/master/BasicCalculator) |
+|             | 19.12.20 | [Basic Calculator](https://github.com/cskime/ios-TIL/tree/master/Tasks/BasicCalculator) |
 | **Week 8**  | 19.12.23 | [UINavigationController](https://github.com/cskime/ios-TIL/blob/master/201912/8주차/191223/[8-1]191223_UINavigationController.md)<br />[UITabBarController](https://github.com/cskime/ios-TIL/blob/master/201912/8주차/191223/[8-1]191223_UITabBarController.md) |
+|             | 19.12.27 | [2차 시험: Domino Order](https://github.com/cskime/ios-TIL/tree/master/Tasks/TEST2-Domino) |
 | **Week 10** | 20.01.06 | [URLScheme](https://github.com/cskime/ios-TIL/blob/master/202001/10주차/200106/[10-1]200106_URLScheme.md)<br />[UIImagePickerController](https://github.com/cskime/ios-TIL/blob/master/202001/10주차/200106/[10-1]200106_UIImagePicker.md) |
 |             | 20.01.07 | [UIGestureRecognizer](https://github.com/cskime/ios-TIL/blob/master/202001/10주차/200107/[10-2]200107_UIGestureRecognizer.md) |
 |             | 20.01.09 | [Core Location](https://github.com/cskime/ios-TIL/blob/master/202001/10주차/200109/[10-4]200109_CoreLocation.md)<br />[MapKit](https://github.com/cskime/ios-TIL/blob/master/202001/10주차/200109/[10-4]200109_MKMapKit.md) |
@@ -58,7 +59,7 @@
 
 ## Tasks
 
-### [Domino Order]()
+### [Domino Order](https://github.com/cskime/ios-TIL/tree/master/Tasks/TEST2-Domino)
 
 - Description : `UITableView`를 활용한 피자 주문 앱
   - 주문 수량에 따라 wish list(장바구니)에 메뉴 추가
@@ -67,7 +68,7 @@
 
 ![Run](Tasks/TEST2-Domino/running-image.png)
 
-### [Basic Login Page]()
+### [Basic Login Page](https://github.com/cskime/ios-TIL/tree/master/Tasks/BasicLoginPage)
 
 - Description : 기본적인 로그인 및 회원가입 페이지
   - 회원 가입 및 로그인
@@ -77,7 +78,7 @@
 
 <img src="Tasks/BasicLoginPage/page-description.png" alt="Page Description" width="70%">
 
-### [Basic Calculator]()
+### [Basic Calculator](https://github.com/cskime/ios-TIL/tree/master/Tasks/BasicCalculator)
 
 - Description : 기본적인 계산기 앱
   - 덧셈, 뺄셈, 곱셈, 나눗셈 기능 구현
@@ -86,7 +87,7 @@
 
 <img src="Tasks/BasicCalculator/running-image.png" alt="Run" width="30%">
 
-### [Simple Order]()
+### [Simple Order](https://github.com/cskime/ios-TIL/tree/master/Tasks/TEST1-Order)
 
 - Description : 기초적인 주문하기 앱
   - 메뉴별 주문수량 증가, 주문 수량에 따른 총 결제 금액 증가
