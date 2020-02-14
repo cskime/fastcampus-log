@@ -65,7 +65,7 @@
   - Wish list에서 삭제되거나 주문한 메뉴의 주문 수량 초기화
 - Tech Stack : `UITableView`, MVC Pattern, Delegate Pattern
 
-![Run](Tasks/Test2-Domino/running-image.png)
+![Run](Tasks/TEST2-Domino/running-image.png)
 
 ### [Basic Login Page]()
 
