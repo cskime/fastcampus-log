@@ -14,13 +14,13 @@
 
 ### Network API Lifecycle
 
-- `URLSessionConfiguration`을 설정하고 `URLSession` 생성
-- `URL` 또는 `URLRequest` 생성
-- Task를 결정하고 **Completion Handler** 파라미터를 전달하거나 **delegate** method를 구현
+1. `URLSessionConfiguration`을 설정하고 `URLSession` 생성
+2. `URL` 또는 `URLRequest` 생성
+3. Task를 결정하고 **Completion Handler** 파라미터를 전달하거나 **delegate** method를 구현
   - Completion Handler를 사용하면 delegate는 호출되지 않음
-  - 비교적 간단한 응답은 Completion Handler를 이용하고 세세한 처리가 필요할 때 delegate 이용
-- `URLSession`을 통해 task 수행
-- 작업 완료 후 completion handler 또는 delegate method가 호출되고 `URLResponse`를 처리한 뒤 종료
+  - 비교적 간단한 응답은 Completion Handler를 이용하고 세세한 처리가 필요할 때 delegate 이용
+4. `URLSession`을 통해 task 수행
+5. 작업 완료 후 completion handler 또는 delegate method가 호출되고 `URLResponse`를 처리한 뒤 종료
 
 ## URLSessionConfiguration
 
