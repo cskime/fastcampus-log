@@ -6,10 +6,10 @@
 
 - [Study](https://github.com/cskime/ios-TIL#Study-Log)
 - [Tasks](https://github.com/cskime/ios-TIL#Tasks)
-  - Simple Order
-  - Basic Login Page
-  - Basic Calculator
   - Domino Order
+  - Basic Calculator
+  - Basic Login Page
+  - Simple Order
 
 ## Study Log
 
@@ -57,6 +57,7 @@
 |             | 20.02.11 | [Network Basic](https://github.com/cskime/ios-TIL/blob/master/202002/15주차/200211/[15-2]200211_Network.md)<br />[Closure: Capture, Escaping, AutoClosure](https://github.com/cskime/ios-TIL/blob/master/202002/15주차/200211/[15-2]200211_Closure_고급.md) |
 |             | 20.02.13 | [GCD(Grand Central Dispatch)](https://github.com/cskime/ios-TIL/blob/master/202002/15주차/200213/[15-4]200213_GCD.md)<br />[URL Loading System](https://github.com/cskime/iOS-Study-Log/blob/master/202002/15주차/200213/[15-4]200213_URL-Loading-System.md) |
 | **Week 16** | 20.02.17 | [JSON(JavaScript Object Notation)](https://github.com/cskime/iOS-Study-Log/blob/master/202002/16주차/200217/[16-1]200217_JSON.md) |
+|             | 20.02.18 | [Codable](https://github.com/cskime/iOS-Study-Log/blob/master/202002/16주차/200218/[16-2]200218_Codable.md) |
 
 ## Tasks
 
