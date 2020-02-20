@@ -58,6 +58,7 @@
 |             | 20.02.13 | [GCD(Grand Central Dispatch)](https://github.com/cskime/ios-TIL/blob/master/202002/15주차/200213/[15-4]200213_GCD.md)<br />[URL Loading System](https://github.com/cskime/iOS-Study-Log/blob/master/202002/15주차/200213/[15-4]200213_URL-Loading-System.md) |
 | **Week 16** | 20.02.17 | [JSON(JavaScript Object Notation)](https://github.com/cskime/iOS-Study-Log/blob/master/202002/16주차/200217/[16-1]200217_JSON.md) |
 |             | 20.02.18 | [Codable](https://github.com/cskime/iOS-Study-Log/blob/master/202002/16주차/200218/[16-2]200218_Codable.md) |
+|             | 20.02.20 | [Dependency Manager; Cocoapods and Carthage](https://github.com/cskime/iOS-Study-Log/blob/master/202002/16주차/200220/%5B16-4%5D200220_DependencyManager.md)<br />[SnapKit](https://github.com/cskime/iOS-Study-Log/blob/master/202002/16주차/200220/%5B16-4%5D200220_SnapKit.md) |
 
 ## Tasks
 
