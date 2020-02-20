@@ -1,6 +1,6 @@
-# iOS Study Log
+#  iOS Study Log
 
-😎 Daily iOS Study Log in FastCampus iOS School 10th
+📝 Daily iOS Study Log in FastCampus iOS School 10th
 
 ## Table of Contents
 
