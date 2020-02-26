@@ -41,7 +41,7 @@
 |             | 20.01.07 | [UIGestureRecognizer](https://github.com/cskime/ios-TIL/blob/master/202001/10주차/200107/[10-2]200107_UIGestureRecognizer.md) |        |
 |             | 20.01.09 | [Core Location](https://github.com/cskime/ios-TIL/blob/master/202001/10주차/200109/[10-4]200109_CoreLocation.md)<br />[MapKit](https://github.com/cskime/ios-TIL/blob/master/202001/10주차/200109/[10-4]200109_MKMapKit.md) |        |
 |             | 20.01.10 | [UIScrollView](https://github.com/cskime/ios-TIL/blob/master/202001/10주차/200110/[10-5]200110_UIScrollView.md) |        |
-| **Week 11** | 20.01.13 | [UIViewAnimation](https://github.com/cskime/ios-TIL/blob/master/202001/11주차/200110/[11-1]200113_UIViewAnimation.md) |        |
+| **Week 11** | 20.01.13 | [UIViewAnimation](https://github.com/cskime/iOS-Study-Log/blob/master/202001/11주차/200113/%5B11-1%5D200113_UIViewAnimation.md) |        |
 |             | 20.01.14 | [Practice : SlackNewWorkspaceUI](https://github.com/cskime/ios-TIL/tree/master/202001/11주차/200114/[11-2]200114_SlackNewWorkspaceUI) |        |
 |             | 20.01.17 | [1차 해커톤: Let's Mung](https://github.com/cskime/Introduce#pet-walklets-mung) | 해커톤 |
 | **Week 12** | 20.01.21 | [High Order Function](https://github.com/cskime/ios-TIL/blob/master/202001/12주차/200121/[12-1]200121_HighOrderFunction.md) |        |
