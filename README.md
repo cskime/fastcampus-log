@@ -57,7 +57,8 @@
 |             | 20.02.18 | [Codable](https://github.com/cskime/iOS-Study-Log/blob/master/202002/16주차/200218/[16-2]200218_Codable.md) |        |
 |             | 20.02.20 | [Dependency Manager; Cocoapods and Carthage](https://github.com/cskime/iOS-Study-Log/blob/master/202002/16주차/200220/%5B16-4%5D200220_DependencyManager.md)<br />[SnapKit](https://github.com/cskime/iOS-Study-Log/blob/master/202002/16주차/200220/%5B16-4%5D200220_SnapKit.md) |        |
 |             | 20.02.21 | [Alamofire](https://github.com/cskime/iOS-Study-Log/blob/master/202002/16주차/200221/%5B16-5%5D200221_Alamofire.md) |        |
-| **Week 17** | 20.02.27 | [Project: 날씨 정보 앱(Weather Forecast)](https://github.com/cskime/iOS-Study-Log/tree/master/Tasks/WeatherForecast) | 연습   |
-|             | 20.02.28 | [Project: 음악 검색 앱(iTunes Player)](https://github.com/cskime/iOS-Study-Log/blob/master/Tasks/ITunesPlayer/ITunesPlayer.md) | 연습   |
+| **Week 17** | 20.02.27 | [Project: 날씨 정보 앱(Weather Forecast)](https://github.com/cskime/iOS-Study-Log/tree/master/Tasks/WeatherForecast/README.md) | 연습   |
+|             | 20.02.28 | [Project: 음악 검색 앱(iTunes Player)](https://github.com/cskime/iOS-Study-Log/blob/master/Tasks/ITunesPlayer/README.md) | 연습   |
 
 ​	
+
