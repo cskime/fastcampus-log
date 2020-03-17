@@ -60,6 +60,7 @@
 | **Week 17** | 20.02.27 | [Project: 날씨 정보 앱(Weather Forecast)](https://github.com/cskime/iOS-Study-Log/tree/master/Tasks/WeatherForecast/README.md) | 연습   |
 |             | 20.02.28 | [Project: 음악 검색 앱(iTunes Player)](https://github.com/cskime/iOS-Study-Log/blob/master/Tasks/ITunesPlayer/README.md) | 연습   |
 | **Week 20** | 20.03.16 | [SwiftUI](https://github.com/cskime/iOS-Study-Log/blob/master/202003/[20-1]200316-SwiftUIExample/[20-1]200316-SwiftUIExample/ContentView.swift) |        |
+|             | 20.03.17 | [Apple Login](https://github.com/cskime/iOS-Study-Log/blob/master/202003/[20-2]200317-AppleLogin/AppleLogin.md) |        |
 
 ​	
 
